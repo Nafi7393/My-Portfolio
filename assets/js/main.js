@@ -304,9 +304,12 @@ html.push(textArray[i]);
 
 
   var onur = 0.1;
+  
+  /*
   if( $(window).width() <= 1024 ){
     var onur = 0.02;
   }
+  */
 
     var scrollbar = Scrollbar.init(
       document.getElementById('page-scroll'), { 
