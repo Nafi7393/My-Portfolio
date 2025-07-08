@@ -303,7 +303,7 @@ html.push(textArray[i]);
   // SMOOTH SCROLL JS
 
 
-  var onur = 0.1;
+  var onur = 0.5;
   
   /*
   if( $(window).width() <= 1024 ){
