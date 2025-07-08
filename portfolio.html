@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Naich Naznafi - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Naich Naznafi - Portfolio">
+  <meta name="keywords" content="personal, portfolio, blog, resume, portfolio template, personal template, personal blog, personal portfolio, personal resume, naich naznafi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon & Fonts & CSS -->
+  <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="assets/icon-fonts/flat-icon/flaticon.css"/>
+  <link rel="stylesheet" href="assets/icon-fonts/font-awesome/css/all.min.css"/>
+
+  <!-- Isotope & imagesLoaded (must come before our inline script) -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+</head>
+<body class="scroll-animation-on">
+
+<!-- Preloader -->
+<div id="loader" class="preloader">
+  <div class="loading">
+    <div class="profile-image">
+      <img src="assets/images/profile-loader.jpg" alt="">
+      <svg style="position: absolute;" width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <circle class="js-circle circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+        <circle class="js-circle circletwo" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="page-cover">
+  <div id="page-scroll">
+    <div class="barba-wrapper" data-barba="wrapper">
+      <main data-barba="container">
+        <div class="container">
+          <div class="page-wrapper">
+
+            <header id="fixed">
+              <div class="hamburger hamburger--elastic"> 
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span> 
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
+            
+            <h5 class="underline-title">PORTFOLIO</h5>
+            <div class="spacer-30"></div>
+
+            <section class="portfolio" id="portfolio"> 
+              <div class="spacer-15"></div>
+              <div class="section-head">
+                <div class="portfolio_filter">
+                  <ul> 
+                    <li><a class="select-cat" data-filter="*" href="#">All Works</a></li>
+                    <li><a data-filter=".graphics" href="#">Graphics Design</a></li>
+                    <li><a data-filter=".programming" href="#">Programming</a></li>
+                    <li><a data-filter=".other" href="#">Other</a></li>
+                  </ul>   
+                </div>
+                <div class="spacer-60"></div>
+              </div>
+
+              <!-- Dynamic portfolio items injected here -->
+              <div class="row masonry" id="portfolio-container">
+                <!-- JS will populate this -->
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+        <footer>
+          <div class="container">
+            <div class="footer-inner">
+              <div class="footer-content">
+                <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+              </div>
+              <ul class="social">
+                <li><a href="https://www.facebook.com/nafi.ahmed.52493" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/Nafi779" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/nafi_._65" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/Nafi7393" target="_blank"><i class="fab fa-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+<div class="bg-image" style="background-image: url(assets/images/bg.jpg);"></div>
+
+<!-- Core Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
