@@ -303,13 +303,13 @@ html.push(textArray[i]);
   // SMOOTH SCROLL JS
 
 
-  var onur = 0.5;
+  var onur = 0.05; // default damping value
   
-  /*
+  
   if( $(window).width() <= 1024 ){
-    var onur = 0.02;
+    var onur = 1;
   }
-  */
+  
 
     var scrollbar = Scrollbar.init(
       document.getElementById('page-scroll'), { 

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Portfolio - Expenses Tracker</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Expense Tracker - Flask & PostgreSQL">
+  <meta name="keywords" content="expenses, tracker, finance, flask">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->   
+  <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/main.css"/>
+
+  <!-- Google Web fonts -->    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <!-- Font icons -->
+  <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css"/>
+  <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css"/>
+</head>
+<body class="scroll-animation-on">
+
+  <!-- Preloader -->
+  <div id="loader" class="preloader">
+    <div class="loading">
+      <div class="profile-image">
+        <img src="../../assets/images/profile-loader.jpg" alt="">
+        <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <circle class="js-circle circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+          <circle class="js-circle circletwo" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <div class="page-cover">
+    <div id="page-scroll">
+      <div class="barba-wrapper" data-barba="wrapper">
+        <main data-barba="container">
+
+          <div class="container">
+            <div class="page-wrapper">
+
+              <!-- Header -->
+              <header id="fixed">
+                <div class="hamburger hamburger--elastic"> 
+                  <span class="hamburger-box"><span class="hamburger-inner"></span></span> 
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../resume.html">Resume</a></li>
+                    <li><a href="../../portfolio.html">Portfolio</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </header>
+
+              <!-- Title & Intro -->
+              <div class="spacer-30"></div>
+              <h1 class="big-title">Expense Tracker</h1>
+              <p>
+                Welcome to Expense Tracker, a web application designed to help users manage their expenses effortlessly.
+                This project leverages Flask and PostgreSQL to provide a secure and interactive platform for tracking personal finances.
+              </p>
+
+<!-- Access the Website -->
+<div class="spacer-30"></div>
+<h2>Explore the Project</h2>
+<p>
+  You can access Expense Tracker here:
+  <a href="https://expenses-tracker-6mhs.onrender.com/" target="_blank" style="color: #e6ff00; text-decoration: underline">
+    Live Demo
+  </a>
+  &nbsp;|&nbsp;
+  <a href="https://github.com/Nafi7393/Expenses-Tracker" target="_blank" style="color: #e6ff00; text-decoration: underline">
+    Source on GitHub
+  </a>
+</p>
+
+
+              <!-- Features -->
+              <div class="spacer-30"></div>
+              <h2>Features</h2>
+              <ul>
+                <li><p><strong>- User Authentication:</strong> Users can create accounts, log in securely, and log out.</p></li>
+                <li><p><strong>- Expense Management:</strong> Add, view, and categorize expenses effortlessly.</p></li>
+                <li><p><strong>- View Last 7 Days’ Expenses:</strong> Display a summary of expenses for the last 7 days.</p></li>
+                <li><p><strong>- View Monthly Expenses:</strong> Display a summary of expenses for each month and view details for each date within the month.</p></li>
+                <li><p><strong>- Interactive Charts:</strong> Visualize expense trends with interactive charts for better insights.</p></li>
+                <li><p><strong>- Responsive Design:</strong> Optimized for desktop and mobile platforms for seamless user experience.</p></li>
+              </ul>
+
+              <!-- Technologies Used -->
+              <div class="spacer-30"></div>
+              <h2>Technologies Used</h2>
+              <ul>
+                <li><p><strong>- Front-end:</strong> HTML, CSS, JavaScript</p></li>
+                <li><p><strong>- Back-end:</strong> Python (Flask)</p></li>
+                <li><p><strong>- Database:</strong> PostgreSQL</p></li>
+                <li><p><strong>- Charts:</strong> Chart.js</p></li>
+                <li><p><strong>- Session Management:</strong> Flask-Session</p></li>
+              </ul>
+
+              <!-- Screenshots -->
+              <div class="spacer-30"></div>
+              <h2>Screenshots</h2>
+              <div class="spacer-10"></div
+
+              <!-- Register Page -->
+              <h5>Register Page</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="register-page.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="register-page.jpg" alt="Register Page">
+                    </a>
+                    <p class="caption">
+                      <em>Register Page:</em> New users can easily register with their name, email, and password.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="spacer-30"></div>
+              <!-- Login Page -->
+              <h5>Login Page</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="login-page.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="login-page.jpg" alt="Login Page">
+                    </a>
+                    <p class="caption">
+                      <em>Login Page:</em> Existing users can securely log in with their credentials.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+              <!-- Dashboard Overview -->
+              <h5>Dashboard Overview</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="dashboard.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="dashboard.jpg" alt="Dashboard Overview">
+                    </a>
+                    <p class="caption">
+                      <em>Dashboard Overview:</em> Visual summary of expenses for the current month.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+              <!-- Detailed Expenses -->
+              <h5>Detailed Expenses</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-6 scale-animation">
+                    <a href="dashboard-6months-details.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="dashboard-6months-details.jpg" alt="6-Month Trends">
+                    </a>
+                    <p class="caption">
+                      <em>Monthly Expenses:</em> View detailed expenses for the last 6 months.
+                    </p>
+                  </div>
+                  <div class="col-xl-6 scale-animation" data-delay=".1">
+                    <a href="dashboard-every_details.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="dashboard-every_details.jpg" alt="Daily Breakdown">
+                    </a>
+                    <p class="caption">
+                      <em>Daily Expenses Breakdown:</em> View expenses for each day within the selected month.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+              <!-- Mobile Dashboard -->
+              <h5>Mobile Dashboard</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="mobile-dashboard.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="mobile-dashboard.jpg" alt="Mobile Dashboard">
+                    </a>
+                    <p class="caption">
+                      <em>Mobile Dashboard:</em> Responsive design ensures usability across different devices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+              <!-- Setup Instructions, Usage, Contributing -->
+              <div class="readme-wrapper">
+                <h2>Setup Instructions</h2>
+                <pre style="color:#fff; line-height:1.2em;"><code>git clone https://github.com/Nafi7393/Expenses-Tracker.git
+cd Expenses-Tracker
+pip install -r requirements.txt
+
+# Set up the PostgreSQL database
+createdb expenses_tracker
+# Update config.py with your PostgreSQL URI
+
+python manage.py db upgrade
+python app.py
+
+# Open in your browser:
+# http://localhost:5000</code></pre>
+                <div class="spacer-30"></div>
+                <h2>Usage</h2>
+                <ul>
+                  <li><p>- Register for a new account or log in with existing credentials.</p></li>
+                  <li><p>- Add expenses with details such as date, category, and amount.</p></li>
+                  <li><p>- Navigate through daily, weekly, and monthly summaries on the dashboard.</p></li>
+                  <li><p>- Visualize spending patterns with interactive charts.</p></li>
+                </ul>
+              </div>
+
+              <!-- Footer Navigation -->
+              <div class="work-navigation spacer-60">
+                <a class="case" href="../../portfolio.html">
+                  <svg height="16" viewBox="0 0 40 40" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect height="14" width="14" x="1" y="25"/>
+                    <rect height="14" width="14" x="25" y="25"/>
+                    <rect height="14" width="14" x="1" y="1"/>
+                    <rect height="14" width="14" x="25" y="1"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer>
+            <div class="container">
+              <div class="footer-inner">
+                <div class="footer-content">
+                  <p>© <span id="year"></span> Nafi Ahmed. All rights reserved.</p>
+                </div>
+                <ul class="social">
+                  <li><a href="https://www.facebook.com/nafi.ahmed.52493" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://x.com/Nafi779" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/nafi_._65" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://github.com/Nafi7393" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascripts -->
+  <script src="../../assets/js/jquery.js"></script>
+  <script src="../../assets/js/plugins.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+  <script src="../../assets/js/map.js"></script>
+  <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

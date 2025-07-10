@@ -1,0 +1,13 @@
+title: This is my first blog 
+date: 12th March, 2025
+author: Naich Naznafi
+categories: AI, Python, Midjourney, API-Calls
+
+
+
+other infos about the blog.
+more infos.
+.
+.
+.
+blehhh bleeh

@@ -1,50 +1,79 @@
 [
   {
-    "title": "Midst To two creature all darkness lesser own i multiply itself you’ll good",
-    "image": "blogs/blog-1/cover.jpg",
-    "url": "blogs/blog-1/sample-blog.html",
-    "date": "March 15, 2012",
-    "author": "admin",
-    "categories": ["Classic", "Template", "Uncategorized"]
-  },
-  {
-    "title": "A Black Whiskey Entrepreneur Will Help Bankroll Like Her",
-    "image": "blogs/blog-2/cover.jpg",
+    "title": "This is my first blog",
+    "date": "12th March, 2025",
+    "author": "Naich Naznafi",
+    "categories": [
+      "AI",
+      "Python",
+      "Midjourney",
+      "API-Calls"
+    ],
     "url": "blogs/blog-2/sample-blog.html",
-    "date": "March 15, 2012",
-    "author": "admin",
-    "categories": ["Classic", "Template", "Uncategorized"]
+    "image": "blogs/blog-2/__cover.jpg"
   },
   {
-    "title": "Star Chef From Peru to Head Public Hotel Restaurants",
-    "image": "blogs/blog-3/cover.jpg",
+    "title": "blog-3",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
     "url": "blogs/blog-3/sample-blog.html",
-    "date": "March 15, 2012",
-    "author": "admin",
-    "categories": ["Classic", "Template", "Uncategorized"]
+    "image": "blogs/blog-3/__cover.jpg"
   },
   {
-    "title": "For Lemon Curd in Less Than 10 Minutes, Use Your Microwave",
-    "image": "blogs/blog-4/cover.jpg",
+    "title": "blog-4",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
     "url": "blogs/blog-4/sample-blog.html",
-    "date": "March 15, 2012",
-    "author": "admin",
-    "categories": ["Classic", "Template", "Uncategorized"]
+    "image": "blogs/blog-4/__cover.jpg"
   },
   {
-    "title": "A New Champion of Short Ribs in Koreatown",
-    "image": "blogs/blog-5/cover.jpg",
+    "title": "blog-5",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
     "url": "blogs/blog-5/sample-blog.html",
-    "date": "March 15, 2012",
-    "author": "admin",
-    "categories": ["Classic", "Template", "Uncategorized"]
+    "image": "blogs/blog-5/__cover.jpg"
   },
   {
-    "title": "Why 'Kim’s Convenience' Is 'Quietly Revolutionary'",
-    "image": "blogs/blog-6/cover.jpg",
+    "title": "blog-6",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
     "url": "blogs/blog-6/sample-blog.html",
-    "date": "March 15, 2012",
-    "author": "admin",
-    "categories": ["Classic", "Template", "Uncategorized"]
+    "image": "blogs/blog-6/__cover.jpg"
+  },
+  {
+    "title": "blog-7",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
+    "url": "blogs/blog-7/sample-blog.html",
+    "image": "blogs/blog-7/__cover.jpg"
+  },
+  {
+    "title": "blog-9",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
+    "url": "blogs/blog-9/sample-blog.html",
+    "image": "blogs/blog-9/__cover.jpg"
+  },
+  {
+    "title": "blog-nothing",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
+    "url": "blogs/blog-nothing/sample-blog.html",
+    "image": "blogs/blog-nothing/__cover.jpg"
+  },
+  {
+    "title": "blog-something",
+    "date": "",
+    "author": "Naich Naznafi",
+    "categories": [],
+    "url": "blogs/blog-something/sample-blog.html",
+    "image": "blogs/blog-something/__cover.jpg"
   }
 ]

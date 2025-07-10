@@ -1,58 +1,58 @@
 [
   {
-    "category": "graphics",
-    "image": "portfolio-works/Seamless-Pattern/__cover.jpg",
+    "title": "Expenses Tracker",
+    "category": "programming",
+    "tag": "Python - Flask & PostgreSQL",
+    "link": "portfolio-works/Expenses-Tracker/expenses-tracker.html",
+    "image": "portfolio-works/Expenses-Tracker/__cover.jpg"
+  },
+  {
     "title": "Seamless Pattern",
-    "tag": "Photoshop & Midjoureny",
-    "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html"
-  },
-  {
     "category": "graphics",
-    "image": "portfolio-works/work-2/cover.jpg",
-    "title": "Bohinc Studio",
-    "tag": "AI Artwork",
-    "link": "portfolio-works/work-2/sample-work.html"
+    "tag": "Photoshop - Midjourney",
+    "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html",
+    "image": "portfolio-works/Seamless-Pattern/__cover.jpg"
   },
   {
-    "category": "other",
-    "image": "portfolio-works/work-3/cover.jpg",
-    "title": "Connect Home",
-    "tag": "Other",
-    "link": "portfolio-works/work-3/sample-work.html"
+    "title": "work-3",
+    "category": "",
+    "tag": "",
+    "link": "portfolio-works/work-3/sample-work.html",
+    "image": "portfolio-works/work-3/__cover.jpg"
   },
   {
-    "category": "programming",
-    "image": "portfolio-works/work-4/cover.jpg",
-    "title": "Walnut and Green",
-    "tag": "Python Programming",
-    "link": "portfolio-works/work-4/sample-work.html"
+    "title": "work-4",
+    "category": "",
+    "tag": "",
+    "link": "portfolio-works/work-4/sample-work.html",
+    "image": "portfolio-works/work-4/__cover.jpg"
   },
   {
-    "category": "programming",
-    "image": "portfolio-works/work-5/cover.jpg",
-    "title": "46 Bar & Restaurant",
-    "tag": "WEB Development",
-    "link": "portfolio-works/work-5/sample-work.html"
+    "title": "work-5",
+    "category": "",
+    "tag": "",
+    "link": "portfolio-works/work-5/sample-work.html",
+    "image": "portfolio-works/work-5/__cover.jpg"
   },
   {
-    "category": "graphics",
-    "image": "portfolio-works/work-6/cover.jpg",
-    "title": "Dark",
-    "tag": "Midjourney - Photorealistic",
-    "link": "portfolio-works/work-6/sample-work.html"
+    "title": "work-6",
+    "category": "",
+    "tag": "",
+    "link": "portfolio-works/work-6/sample-work.html",
+    "image": "portfolio-works/work-6/__cover.jpg"
   },
   {
-    "category": "other",
-    "image": "portfolio-works/work-7/cover.jpg",
-    "title": "Nexta",
-    "tag": "PDF Editing",
-    "link": "portfolio-works/work-7/sample-work.html"
+    "title": "work-7",
+    "category": "",
+    "tag": "",
+    "link": "portfolio-works/work-7/sample-work.html",
+    "image": "portfolio-works/work-7/__cover.jpg"
   },
   {
-    "category": "programming",
-    "image": "portfolio-works/work-8/cover.jpg",
-    "title": "Dark Forest",
-    "tag": "Python Programming",
-    "link": "portfolio-works/work-8/sample-work.html"
+    "title": "work-8",
+    "category": "",
+    "tag": "",
+    "link": "portfolio-works/work-8/sample-work.html",
+    "image": "portfolio-works/work-8/__cover.jpg"
   }
 ]
