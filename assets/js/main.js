@@ -307,7 +307,7 @@ html.push(textArray[i]);
   
   
   if( $(window).width() <= 1024 ){
-    var onur = 1;
+    var onur = 0.7;
   }
   
 
