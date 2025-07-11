@@ -4,13 +4,13 @@
     "category": "programming",
     "tag": "Python - Flask & PostgreSQL",
     "link": "portfolio-works/Expenses-Tracker/expenses-tracker.html",
-    "image": "portfolio-works/Expenses-Tracker/__cover.jpg"
+    "image": "portfolio-works/Expenses-Tracker/cover.jpg"
   },
   {
     "title": "Seamless Pattern",
     "category": "graphics",
     "tag": "Photoshop - Midjourney",
     "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html",
-    "image": "portfolio-works/Seamless-Pattern/__cover.jpg"
+    "image": "portfolio-works/Seamless-Pattern/cover.jpg"
   }
 ]

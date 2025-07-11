@@ -55,7 +55,7 @@ def generate_blog_info():
         if len(html_files) != 1:
             raise RuntimeError(f"Expected exactly one HTML file in {folder_path}, found {html_files}")
         url = f"{base}/{folder}/{html_files[0]}"
-        image = f"{base}/{folder}/__cover.jpg"
+        image = f"{base}/{folder}/cover.jpg"
 
         # Append in order: title, date, author, categories, url, image
         entries.append({
@@ -97,7 +97,7 @@ def generate_portfolio_items():
                             metadata[k] = v
 
         # Cover image and link
-        image = f"{base}/{folder}/__cover.jpg"
+        image = f"{base}/{folder}/cover.jpg"
         if not os.path.isfile(image):
             raise RuntimeError(f"No __cover.jpg found in {folder_path}")
         html_files = [f for f in os.listdir(folder_path) if f.lower().endswith(".html")]

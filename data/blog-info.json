@@ -10,7 +10,7 @@
       "API-Calls"
     ],
     "url": "blogs/blog-2/sample-blog.html",
-    "image": "blogs/blog-2/__cover.jpg"
+    "image": "blogs/blog-2/cover.jpg"
   },
   {
     "title": "blog-3",
@@ -18,7 +18,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-3/sample-blog.html",
-    "image": "blogs/blog-3/__cover.jpg"
+    "image": "blogs/blog-3/cover.jpg"
   },
   {
     "title": "blog-4",
@@ -26,7 +26,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-4/sample-blog.html",
-    "image": "blogs/blog-4/__cover.jpg"
+    "image": "blogs/blog-4/cover.jpg"
   },
   {
     "title": "blog-5",
@@ -34,7 +34,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-5/sample-blog.html",
-    "image": "blogs/blog-5/__cover.jpg"
+    "image": "blogs/blog-5/cover.jpg"
   },
   {
     "title": "blog-6",
@@ -42,7 +42,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-6/sample-blog.html",
-    "image": "blogs/blog-6/__cover.jpg"
+    "image": "blogs/blog-6/cover.jpg"
   },
   {
     "title": "blog-7",
@@ -50,7 +50,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-7/sample-blog.html",
-    "image": "blogs/blog-7/__cover.jpg"
+    "image": "blogs/blog-7/cover.jpg"
   },
   {
     "title": "blog-9",
@@ -58,7 +58,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-9/sample-blog.html",
-    "image": "blogs/blog-9/__cover.jpg"
+    "image": "blogs/blog-9/cover.jpg"
   },
   {
     "title": "blog-nothing",
@@ -66,7 +66,7 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-nothing/sample-blog.html",
-    "image": "blogs/blog-nothing/__cover.jpg"
+    "image": "blogs/blog-nothing/cover.jpg"
   },
   {
     "title": "blog-something",
@@ -74,6 +74,6 @@
     "author": "Naich Naznafi",
     "categories": [],
     "url": "blogs/blog-something/sample-blog.html",
-    "image": "blogs/blog-something/__cover.jpg"
+    "image": "blogs/blog-something/cover.jpg"
   }
 ]
