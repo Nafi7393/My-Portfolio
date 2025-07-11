@@ -9,71 +9,71 @@
       "Midjourney",
       "API-Calls"
     ],
-    "url": "blogs/blog-2/sample-blog.html",
-    "image": "blogs/blog-2/cover.jpg"
+    "url": "blog-posts/blog-2/sample-blog.html",
+    "image": "blog-posts/blog-2/cover.jpg"
   },
   {
     "title": "blog-3",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-3/sample-blog.html",
-    "image": "blogs/blog-3/cover.jpg"
+    "url": "blog-posts/blog-3/sample-blog.html",
+    "image": "blog-posts/blog-3/cover.jpg"
   },
   {
     "title": "blog-4",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-4/sample-blog.html",
-    "image": "blogs/blog-4/cover.jpg"
+    "url": "blog-posts/blog-4/sample-blog.html",
+    "image": "blog-posts/blog-4/cover.jpg"
   },
   {
     "title": "blog-5",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-5/sample-blog.html",
-    "image": "blogs/blog-5/cover.jpg"
+    "url": "blog-posts/blog-5/sample-blog.html",
+    "image": "blog-posts/blog-5/cover.jpg"
   },
   {
     "title": "blog-6",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-6/sample-blog.html",
-    "image": "blogs/blog-6/cover.jpg"
+    "url": "blog-posts/blog-6/sample-blog.html",
+    "image": "blog-posts/blog-6/cover.jpg"
   },
   {
     "title": "blog-7",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-7/sample-blog.html",
-    "image": "blogs/blog-7/cover.jpg"
+    "url": "blog-posts/blog-7/sample-blog.html",
+    "image": "blog-posts/blog-7/cover.jpg"
   },
   {
     "title": "blog-9",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-9/sample-blog.html",
-    "image": "blogs/blog-9/cover.jpg"
+    "url": "blog-posts/blog-9/sample-blog.html",
+    "image": "blog-posts/blog-9/cover.jpg"
   },
   {
     "title": "blog-nothing",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-nothing/sample-blog.html",
-    "image": "blogs/blog-nothing/cover.jpg"
+    "url": "blog-posts/blog-nothing/sample-blog.html",
+    "image": "blog-posts/blog-nothing/cover.jpg"
   },
   {
     "title": "blog-something",
     "date": "",
     "author": "Naich Naznafi",
     "categories": [],
-    "url": "blogs/blog-something/sample-blog.html",
-    "image": "blogs/blog-something/cover.jpg"
+    "url": "blog-posts/blog-something/sample-blog.html",
+    "image": "blog-posts/blog-something/cover.jpg"
   }
 ]

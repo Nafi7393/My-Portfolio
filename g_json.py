@@ -17,7 +17,7 @@ and override defaults for:
 """
 
 def generate_blog_info():
-    base = "blogs"
+    base = "blog-posts"
     entries = []
 
     for folder in os.listdir(base):

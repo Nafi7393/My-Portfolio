@@ -303,11 +303,66 @@ html.push(textArray[i]);
   // SMOOTH SCROLL JS
 
 
-var dampingValue = 0.01;      // almost no lag
+// …up in your file, before you call Scrollbar.init…
+const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+                     .test(navigator.userAgent);
 
-if ($(window).width() <= 1024) {
-  dampingValue = 0.03;        // still low on mobile
+// only init smooth-scroll on non-mobile:
+
+if (!isMobile && window.innerWidth > 1024) {
+  // pick your damping exactly as before
+  const dampingValue = 0.01;
+  scrollbar = Scrollbar.init(
+    document.getElementById('page-scroll'),
+    {
+      damping: dampingValue,
+      renderByPixels: true,
+      continuousScrolling: false
+    }
+  );
+
+  // all your scrollbar listeners (fixed item, onepage nav, etc)
+  if ($('#fixed').length) {
+    scrollbar.addListener(({ offset }) => {  
+      if (offset.y >= 45 ){
+        fixed.style.top = offset.y + 'px';
+      } else {
+        $('header').removeAttr('style');
+      }
+    });
+  }
+
+  if ($('.onepage').length) {
+    scrollbar.addListener(({ offset }) => {
+      const scrollPos = offset.y;
+      $('header nav ul li a').each(function () {
+        const currLink = $(this);
+        const refElement = $(currLink.attr("href"));
+        if (
+          refElement.position().top <= scrollPos &&
+          refElement.position().top + refElement.height() > scrollPos
+        ) {
+          $('header nav ul li a').removeClass("active");
+          currLink.addClass("active");
+        } else {
+          currLink.removeClass("active");
+        }
+      });
+    });
+  }
 }
+// …and in your barba.enter where you do scrollbar.scrollTo…
+barba.init({
+  transitions: [{
+    async enter(data) {
+      ajaxLoad();
+      // only scrollTo if smooth-scroll exists
+      if (scrollbar) scrollbar.scrollTo(0, 0, 0);
+      // …
+    }
+  }]
+});
+
 
 var scrollbar = Scrollbar.init(
   document.getElementById('page-scroll'),
