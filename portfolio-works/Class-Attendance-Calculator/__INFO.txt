@@ -1,0 +1,5 @@
+title: Class Attendance Calculator
+category: programming
+tag: Python - Flask & PostgreSQL
+
+

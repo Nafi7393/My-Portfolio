@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Portfolio - Random Art Generator</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Random Art Generator – Python tool for programmatic abstract and patterned image creation.">
+  <meta name="keywords" content="Random Art Generator, Python, abstract art, patterns, generative art">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->   
+  <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/main.css"/>
+
+  <!-- Google Web fonts -->    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <!-- Font icons -->
+  <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css"/>
+  <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css"/>
+</head>
+<body class="scroll-animation-on">
+
+  <!-- Preloader -->
+  <div id="loader" class="preloader">
+    <div class="loading">
+      <div class="profile-image">
+        <img src="../../assets/images/profile-loader.jpg" alt="">
+        <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <circle class="js-circle circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+          <circle class="js-circle circletwo" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <div class="page-cover">
+    <div id="page-scroll">
+      <div class="barba-wrapper" data-barba="wrapper">
+        <main data-barba="container">
+
+          <div class="container">
+            <div class="page-wrapper">
+
+              <!-- Header -->
+              <header id="fixed">
+                <div class="hamburger hamburger--elastic">
+                  <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../resume.html">Resume</a></li>
+                    <li><a href="../../portfolio.html">Portfolio</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </header>
+
+              <div class="spacer-30"></div>
+              <h1 class="big-title">Random Art Generator</h1>
+              <p>
+                The Random Art Generator is a Python-based tool for creating abstract and patterned images programmatically. Customize lines, circles, rectangles, dots, colors, and effects to explore endless creative possibilities.
+              </p>
+
+              <!-- Explore the Project -->
+              <div class="spacer-30"></div>
+              <h2>Explore the Project</h2>
+              <p>
+                Source code on GitHub:&nbsp;
+                <a href="https://github.com/Nafi7393/Random-Art-Generator" target="_blank" style="color: #e6ff00; text-decoration: underline">
+                   Source on GitHub
+                </a>
+                &nbsp;|&nbsp;
+                Live demo:&nbsp;
+                <a href="https://share.streamlit.io/nafi7393/random-art-generator/main/main.py" target="_blank" style="color: #e6ff00; text-decoration: underline">
+                  Streamlit App
+                </a>
+              </p>
+
+              <!-- Features -->
+              <div class="spacer-30"></div>
+              <h2>Features</h2>
+              <ul>
+                <li><p><strong>- Image Generation Options:</strong> Horizontal/vertical lines, random lines, circles, rectangles, dots, padding and background control.</p></li>
+                <li><p><strong>- Color Customization:</strong> Gradient start/end colors or fully randomized palettes.</p></li>
+                <li><p><strong>- Effects & Transformations:</strong> Blending modes, mirror flips, and seamless tiling for pattern generation.</p></li>
+              </ul>
+
+              <!-- Installation -->
+              <div class="spacer-30"></div>
+              <h2>Installation & Usage</h2>
+              <p style="color:#fff; line-height:1.3em; margin-bottom:20px;">
+                git clone https://github.com/Nafi7393/Random-Art-Generator.git<br>
+                cd Random-Art-Generator<br>
+                pip install -r requirements.txt
+              </p>
+              <p style="color:#fff; line-height:1.3em;">
+                Run the generator script:<br>
+                <code>python art_generator.py</code>
+              </p>
+              <p style="color:#fff; line-height:1.3em;">
+                <br>Specify options for image size, background color, number of elements, shapes (horizontal, vertical, random lines, circle, rect, dots), colors, radii, stroke, blending effect, mirroring, or seamless tiling.
+              </p>
+
+              <!-- Image Previews -->
+              <div class="spacer-30"></div>
+              <h2>Image Previews</h2>
+              <div class="spacer-10"></div>
+
+              <!-- Line Patterns -->
+              <h5>Line Patterns</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/line-horizontal.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/line-horizontal.jpg" alt="Horizontal Lines">
+                    </a>
+                    <p class="caption"><em>Horizontal Lines</em></p>
+                  </div>
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/line-horizontal-seamless.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/line-horizontal-seamless.jpg" alt="Horizontal Lines Seamless">
+                    </a>
+                    <p class="caption"><em>Horizontal Lines - Seamless Pattern</em></p>
+                  </div>
+                </div>
+                <div class="spacer-30"></div>
+                <div class="row box-animation">
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/line-vertical.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/line-vertical.jpg" alt="Vertical Lines">
+                    </a>
+                    <p class="caption"><em>Vertical Lines</em></p>
+                  </div>
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/line-vertical-seamless.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/line-vertical-seamless.jpg" alt="Vertical Lines Seamless">
+                    </a>
+                    <p class="caption"><em>Vertical Lines - Seamless Pattern</em></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Circle Patterns -->
+              <div class="spacer-30"></div>
+              <h5>Circle Patterns</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/circle-diagonal.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/circle-diagonal.jpg" alt="Circle Diagonal">
+                    </a>
+                    <p class="caption"><em>Circle Diagonal</em></p>
+                  </div>
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/circle-diagonal-seamless.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/circle-diagonal-seamless.jpg" alt="Circle Diagonal Seamless">
+                    </a>
+                    <p class="caption"><em>Circle Diagonal - Seamless</em></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rectangle Patterns -->
+              <div class="spacer-30"></div>
+              <h5>Rectangle Patterns</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/rectangle-diagonal.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/rectangle-diagonal.jpg" alt="Rectangle Diagonal">
+                    </a>
+                    <p class="caption"><em>Rectangle Diagonal</em></p>
+                  </div>
+                  <div class="col-xl-6 clip-animation">
+                    <a href="imgs/rectangle-diagonal-seamless.jpg" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/rectangle-diagonal-seamless.jpg" alt="Rectangle Diagonal Seamless">
+                    </a>
+                    <p class="caption"><em>Rectangle Diagonal - Seamless</em></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Seamless Pattern Previews -->
+              <div class="spacer-30"></div>
+              <h5>Seamless Pattern Previews</h5>
+              <div class="swiper work-carousel clip-animation" data-delay="1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/line-horizontal-seamless-PREVIEW.png" alt="Line Horizontal Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/line-vertical-seamless-PREVIEW.png" alt="Line Vertical Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/line-horizontal_and_vertical-seamless-PREVIEW.png" alt="Line Horizontal & Vertical Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/line-random-seamless-PREVIEW.png" alt="Line Random Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/circle-diagonal-seamless-PREVIEW.png" alt="Circle Diagonal Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/circle-random-seamless-PREVIEW.png" alt="Circle Random Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/rectangle-diagonal-seamless-PREVIEW.png" alt="Rectangle Diagonal Seamless Pattern">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/pattern-preview/rectangle-random-seamless-PREVIEW.png" alt="Rectangle Random Seamless Pattern">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- Footer Navigation -->
+              <div class="work-navigation spacer-60">
+                <a class="case" href="../../portfolio.html">
+                  <svg height="16" viewBox="0 0 40 40" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect height="14" width="14" x="1" y="25"/>
+                    <rect height="14" width="14" x="25" y="25"/>
+                    <rect height="14" width="14" x="1" y="1"/>
+                    <rect height="14" width="14" x="25" y="1"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer>
+            <div class="container">
+              <div class="footer-inner">
+                <div class="footer-content">
+                  <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+                </div>
+                <ul class="social">
+                  <li><a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://github.com/Nafi7393" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascripts -->
+  <script src="../../assets/js/jquery.js"></script>
+  <script src="../../assets/js/plugins.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+  <script src="../../assets/js/map.js"></script>
+  <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

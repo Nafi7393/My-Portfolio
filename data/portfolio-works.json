@@ -1,5 +1,19 @@
 [
   {
+    "title": "Awesome QR Codes Generator",
+    "category": "programming",
+    "tag": "Python - Pillow, Steamlit & Requests",
+    "link": "portfolio-works/Awesome-QR-Codes-Generator/awesome-qr-codes-generator.html",
+    "image": "portfolio-works/Awesome-QR-Codes-Generator/cover.jpg"
+  },
+  {
+    "title": "Class Attendance Calculator",
+    "category": "programming",
+    "tag": "Python - Flask & PostgreSQL",
+    "link": "portfolio-works/Class-Attendance-Calculator/class-attendance-calculator.html",
+    "image": "portfolio-works/Class-Attendance-Calculator/cover.jpg"
+  },
+  {
     "title": "Expenses Tracker",
     "category": "programming",
     "tag": "Python - Flask & PostgreSQL",
@@ -7,10 +21,24 @@
     "image": "portfolio-works/Expenses-Tracker/cover.jpg"
   },
   {
+    "title": "Random Art Generator",
+    "category": "programming",
+    "tag": "Python - Pillow & Steamlit",
+    "link": "portfolio-works/Random-Art-Generator/random-art-generator.html",
+    "image": "portfolio-works/Random-Art-Generator/cover.jpg"
+  },
+  {
     "title": "Seamless Pattern",
     "category": "graphics",
     "tag": "Photoshop - Midjourney",
     "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html",
     "image": "portfolio-works/Seamless-Pattern/cover.jpg"
+  },
+  {
+    "title": "Super TIC-TAC-TOE",
+    "category": "programming",
+    "tag": "Python - Pygame, AI Player",
+    "link": "portfolio-works/Super-TIC-TAC-TOE/Super-TIC-TAC-TOE.html",
+    "image": "portfolio-works/Super-TIC-TAC-TOE/cover.jpg"
   }
 ]

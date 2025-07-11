@@ -1,0 +1,5 @@
+title: Awesome QR Codes Generator
+category: programming
+tag: Python - Pillow, Steamlit & Requests
+
+

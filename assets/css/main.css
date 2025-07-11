@@ -2607,3 +2607,35 @@ form .site-btn{
 }
 
 
+/* ensure each figure fills its cell */
+.append-images figure {
+  width: 100%;
+}
+
+/* Mobile: single‐column, still centered images */
+.append-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* Desktop: 6-unit grid, with top 3 small, bottom 2 big */
+@media (min-width: 768px) {
+  .append-images {
+    grid-template-columns: repeat(6, 1fr);
+    /* stretch cells so width:100% on figure really spans correctly */
+    justify-items: stretch;
+  }
+  /* Top three: each 2/6 → 3 across */
+  .append-images figure:nth-child(1),
+  .append-images figure:nth-child(2),
+  .append-images figure:nth-child(3) {
+    grid-column: span 2;
+  }
+  /* Bottom two: each 3/6 → 2 across, half-width each */
+  .append-images figure:nth-child(4),
+  .append-images figure:nth-child(5) {
+    grid-column: span 3;
+  }
+}

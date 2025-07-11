@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Portfolio - Super Tic-Tac-Toe</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Super Tic-Tac-Toe – Python/Pygame enhancement of classic Tic-Tac-Toe with AI and multiplayer modes.">
+  <meta name="keywords" content="Super Tic-Tac-Toe, Python, Pygame, AI, multiplayer, game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->   
+  <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../assets/css/main.css"/>
+
+  <!-- Google Web fonts -->    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <!-- Font icons -->
+  <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css"/>
+  <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css"/>
+</head>
+<body class="scroll-animation-on">
+
+  <!-- Preloader -->
+  <div id="loader" class="preloader">
+    <div class="loading">
+      <div class="profile-image">
+        <img src="../../assets/images/profile-loader.jpg" alt="">
+        <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <circle class="js-circle circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+          <circle class="js-circle circletwo" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <div class="page-cover">
+    <div id="page-scroll">
+      <div class="barba-wrapper" data-barba="wrapper">
+        <main data-barba="container">
+
+          <div class="container">
+            <div class="page-wrapper">
+
+              <!-- Header -->
+              <header id="fixed">
+                <div class="hamburger hamburger--elastic">
+                  <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../resume.html">Resume</a></li>
+                    <li><a href="../../portfolio.html">Portfolio</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </header>
+
+              <div class="spacer-30"></div>
+              <h1 class="big-title">Super Tic-Tac-Toe</h1>
+              <p>
+                Super Tic-Tac-Toe is an exciting enhancement of the classic Tic-Tac-Toe game, built with Python and Pygame. Challenge a friend or a smart AI across adjustable difficulty levels, all within a smooth interface complete with engaging sound effects.
+              </p>
+
+              <!-- Explore the Project -->
+              <div class="spacer-30"></div>
+              <h2>Explore the Project</h2>
+              <p>
+                Source code available on GitHub:
+                <a href="https://github.com/Nafi7393/Super-TIC-TAC-TOE" target="_blank" style="color: #e6ff00; text-decoration: underline">
+                  Source on GitHub
+                </a>
+              </p>
+
+              <!-- Features -->
+              <div class="spacer-30"></div>
+              <h2>Features</h2>
+              <ul>
+                <li><p><strong>- Single and Multiplayer Modes:</strong> Play against a friend or challenge an AI opponent.</p></li>
+                <li><p><strong>- AI Difficulty Settings:</strong> Choose Easy, Medium, or Hard to suit your skill level.</p></li>
+                <li><p><strong>- Interactive UI:</strong> Real-time feedback and smooth animations during play.</p></li>
+                <li><p><strong>- Sound Toggle:</strong> Enable or disable background music and effects.</p></li>
+              </ul>
+
+              <!-- Gameplay -->
+              <div class="spacer-30"></div>
+              <h2>Gameplay</h2>
+              <p>
+                The game is played on a 3×3 grid of smaller 3×3 grids (a super-grid). Players alternate turns placing X or O. Win a small grid by lining up three symbols, then aim to win three small grids in a row across the larger super-grid—horizontally, vertically, or diagonally.
+              </p>
+
+              <!-- Screenshots -->
+              <div class="spacer-30"></div>
+              <h2>Screenshots</h2>
+              <div class="spacer-10"></div>
+
+              <!-- Cover -->
+              <h5>Cover</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/cover.webp" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/cover.webp" alt="Super Tic-Tac-Toe Cover">
+                    </a>
+                    <p class="caption"><em>Cover:</em> Title screen showcasing the game logo and menu options.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <!-- Main Menu -->
+              <h5>Main Menu</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/main_menu.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/main_menu.png" alt="Main Menu">
+                    </a>
+                    <p class="caption"><em>Main Menu:</em> Select Human vs Human or Human vs AI, and adjust sound settings.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <!-- AI Difficulty Selection -->
+              <h5>AI Difficulty Selection</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/ai_difficulty_selection.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/ai_difficulty_selection.png" alt="AI Difficulty Selection">
+                    </a>
+                    <p class="caption"><em>AI Difficulty Settings:</em> Choose Easy, Medium, or Hard to match your preferred challenge.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <!-- AI Thinking -->
+              <h5>AI Thinking</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/ai_thinking.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/ai_thinking.png" alt="AI Thinking">
+                    </a>
+                    <p class="caption"><em>AI Thinking:</em> The AI evaluates moves in real-time, highlighting the active small grid.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <!-- Game Over -->
+              <h5>Game Over (AI Wins)</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/game_over.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/game_over.png" alt="Game Over">
+                    </a>
+                    <p class="caption"><em>Game Over:</em> AI victory display with options to restart or return to menu.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- How to Play -->
+              <div class="spacer-30"></div>
+              <h2>How to Play</h2>
+              <ol style="color:#fff; line-height:1.3em;">
+                <li>Select your game mode from the main menu.</li>
+                <li>If versus AI, pick your difficulty level.</li>
+                <li>Click a highlighted small grid to place your symbol (X or O).</li>
+                <li>Win a small grid by lining up three symbols.</li>
+                <li>Aim to win three small grids in a row on the super-grid.</li>
+                <li>After the match, choose Restart or Main Menu.</li>
+              </ol>
+
+              <!-- Installation -->
+              <div class="spacer-30"></div>
+              <h2>Installation</h2>
+              <p style="color:#fff; line-height:1.3em; margin-bottom:20px;">
+                git clone https://github.com/Nafi7393/Super-TIC-TAC-TOE.git<br>
+                cd Super-TIC-TAC-TOE<br>
+                pip install -r requirements.txt
+              </p>
+              <p style="color:#fff; line-height:1.3em;">
+                python main.py
+              </p>
+
+              <!-- Technologies Used -->
+              <div class="spacer-30"></div>
+              <h2>Technologies Used</h2>
+              <ul>
+                <li><p><strong>- Python:</strong> Core language for game logic.</p></li>
+                <li><p><strong>- Pygame:</strong> Library for rendering, input, and sound.</p></li>
+                <li><p><strong>- Sound:</strong> Custom audio tracks and effects.</p></li>
+              </ul>
+
+
+              <!-- Footer Navigation -->
+              <div class="work-navigation spacer-60">
+                <a class="case" href="../../portfolio.html">
+                  <svg height="16" viewBox="0 0 40 40" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect height="14" width="14" x="1" y="25"/>
+                    <rect height="14" width="14" x="25" y="25"/>
+                    <rect height="14" width="14" x="1" y="1"/>
+                    <rect height="14" width="14" x="25" y="1"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer>
+            <div class="container">
+              <div class="footer-inner">
+                <div class="footer-content">
+                  <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+                </div>
+                <ul class="social">
+                  <li><a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://github.com/Nafi7393" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascripts -->
+  <script src="../../assets/js/jquery.js"></script>
+  <script src="../../assets/js/plugins.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+  <script src="../../assets/js/map.js"></script>
+  <script src="../../assets/js/main.js"></script>
+
+</body>
+</html>
