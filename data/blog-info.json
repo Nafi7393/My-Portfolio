@@ -1,79 +1,26 @@
 [
   {
-    "title": "This is my first blog",
-    "date": "12th March, 2025",
+    "title": "12 Gmail Hacks You'll Wish You Knew Sooner",
+    "date": "13th July, 2025",
     "author": "Naich Naznafi",
     "categories": [
-      "AI",
-      "Python",
-      "Midjourney",
-      "API-Calls"
+      "Gmail",
+      "Secret Settings",
+      "Hacks"
     ],
-    "url": "blog-posts/blog-2/sample-blog.html",
-    "image": "blog-posts/blog-2/cover.jpg"
+    "url": "blog-posts/12-gmail-hacks/12_gmail_hacks.html",
+    "image": "blog-posts/12-gmail-hacks/cover.jpg"
   },
   {
-    "title": "blog-3",
-    "date": "",
+    "title": "7 ChatGPT Prompts Worth More Than a College Degree",
+    "date": "7th June, 2025",
     "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-3/sample-blog.html",
-    "image": "blog-posts/blog-3/cover.jpg"
-  },
-  {
-    "title": "blog-4",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-4/sample-blog.html",
-    "image": "blog-posts/blog-4/cover.jpg"
-  },
-  {
-    "title": "blog-5",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-5/sample-blog.html",
-    "image": "blog-posts/blog-5/cover.jpg"
-  },
-  {
-    "title": "blog-6",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-6/sample-blog.html",
-    "image": "blog-posts/blog-6/cover.jpg"
-  },
-  {
-    "title": "blog-7",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-7/sample-blog.html",
-    "image": "blog-posts/blog-7/cover.jpg"
-  },
-  {
-    "title": "blog-9",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-9/sample-blog.html",
-    "image": "blog-posts/blog-9/cover.jpg"
-  },
-  {
-    "title": "blog-nothing",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-nothing/sample-blog.html",
-    "image": "blog-posts/blog-nothing/cover.jpg"
-  },
-  {
-    "title": "blog-something",
-    "date": "",
-    "author": "Naich Naznafi",
-    "categories": [],
-    "url": "blog-posts/blog-something/sample-blog.html",
-    "image": "blog-posts/blog-something/cover.jpg"
+    "categories": [
+      "Prompt Engineering",
+      "ChatGPT",
+      "Productivity"
+    ],
+    "url": "blog-posts/prompts-worth-more-than-a-college-degree/prompts-worth-more-than-a-college-degree.html",
+    "image": "blog-posts/prompts-worth-more-than-a-college-degree/cover.jpg"
   }
 ]

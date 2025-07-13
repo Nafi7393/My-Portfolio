@@ -882,7 +882,7 @@ footer .social{
 
 footer .social li{
 	float: left;
-	margin-left: 30px;
+	margin-right: 50px;
 }
 
 footer .social li a{
@@ -2640,7 +2640,32 @@ form .site-btn{
   }
 }
 
+.prompt-text {
+    font-family: monospace;
+    background-color: #0a674c;
+    border-left: 4px solid var(--accent);
+    padding: 15px;
+    margin: 15px 0;
+    word-break: break-word;
+}
+
+
 ul li p strong {
 	color: #e6ff00;
 	font-weight: 600;
+}
+
+ul li {
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+p em {
+	color: #e6ff00;
+	font-style: italic;
+}
+
+ol li {
+	color: #ffffff;
+	margin-bottom: 10px;
 }
