@@ -306,7 +306,7 @@ html.push(textArray[i]);
 var dampingValue = 0.01;      // almost no lag
 
 if ($(window).width() <= 1024) {
-  dampingValue = 0.1;        // still low on mobile
+  dampingValue = 0.3;        // still low on mobile
 }
 
 var scrollbar = Scrollbar.init(
