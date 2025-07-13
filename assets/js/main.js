@@ -313,8 +313,8 @@ var scrollbar = Scrollbar.init(
   document.getElementById('page-scroll'),
   {
     damping: dampingValue,
-    renderByPixels: true,       // sharper scroll
-    continuousScrolling: false, // optional
+    renderByPixels: false,       // sharper scroll
+    continuousScrolling: true, // optional
   }
 );
 
