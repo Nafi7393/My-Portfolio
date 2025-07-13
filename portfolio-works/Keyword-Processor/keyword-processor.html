@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Portfolio - Awesome QR Codes Generator</title>
+  <title>Portfolio - Keyword Processor</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Awesome QR Codes Generator – Streamlit app for creating customizable QR codes with backgrounds and color options.">
-  <meta name="keywords" content="QR Code, Streamlit, customization, generator, Python">
+  <meta name="description" content="Keyword Processor – Streamlit app for extracting keywords, fetching synonyms/antonyms, definitions, and visualizing word clouds.">
+  <meta name="keywords" content="Keyword Processor, Streamlit, RAKE, keywords, synonyms, antonyms, word cloud">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicon -->   
@@ -22,7 +22,9 @@
   <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css"/>
   <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css"/>
 
-  
+  <style>
+
+  </style>
 </head>
 <body class="scroll-animation-on">
 
@@ -65,9 +67,9 @@
               </header>
 
               <div class="spacer-30"></div>
-              <h1 class="big-title">Awesome QR Codes Generator</h1>
+              <h1 class="big-title">Keyword Processor</h1>
               <p>
-                Welcome to the Awesome QR Codes Generator, a Streamlit-based application that simplifies the creation of customized QR codes. Enter text, upload background images, pick your colors, and download instantly.
+                The Keyword Processor is a Streamlit application designed to extract keywords, fetch synonyms and antonyms, display definitions, and visualize relationships using dynamic word clouds. It leverages NLP techniques for an interactive linguistic exploration.
               </p>
 
               <!-- Explore the Project -->
@@ -75,7 +77,7 @@
               <h2>Explore the Project</h2>
               <p>
                 Source code available on GitHub:
-                <a href="https://github.com/Nafi7393/Awesome-QR-Codes-Generator" target="_blank" style="color: #e6ff00; text-decoration: underline">
+                <a href="https://github.com/Nafi7393/Keyword-Processor" target="_blank" style="color: #e6ff00; text-decoration: underline">
                   Source on GitHub
                 </a>
               </p>
@@ -84,73 +86,77 @@
               <div class="spacer-30"></div>
               <h2>Features</h2>
               <ul>
-                <li><p><strong>- Customization Options:</strong> Input text, upload a background image, and choose QR & background colors.</p></li>
-                <li><p><strong>- Instant Download:</strong> Download your generated QR codes directly from the interface.</p></li>
-                <li><p><strong>- Example imgs:</strong> Browse creatively customized QR code examples in the imgs directory.</p></li>
+                <li><p><strong>- Keyword Extraction:</strong> Uses the RAKE algorithm to extract significant keywords from input text.</p></li>
+                <li><p><strong>- Synonyms & Antonyms:</strong> Fetches synonyms and antonyms for each keyword via external APIs.</p></li>
+                <li><p><strong>- Definitions:</strong> Retrieves detailed definitions from a dictionary API.</p></li>
+                <li><p><strong>- Word Cloud Visualization:</strong> Generates dynamic word clouds for synonyms and antonyms.</p></li>
+                <li><p><strong>- Interactive Interface:</strong> Streamlit-based UI with real-time updates and buttons.</p></li>
               </ul>
 
-              <!-- Screenshot -->
+              <!-- Screenshots -->
               <div class="spacer-30"></div>
               <h2>Screenshots</h2>
+              <div class="spacer-10"></div>
+
+              <!-- Base Interface -->
+              <h5>Base Interface</h5>
               <div class="lightbox-gallery">
                 <div class="row box-animation">
                   <div class="col-xl-12 clip-animation">
-                    <a href="imgs/website.png" class="image lightbox" style="margin-bottom: 5px;">
-                      <img src="imgs/website.png" alt="Streamlit Website Interface">
+                    <a href="imgs/1.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/1.png" alt="Base Interface">
                     </a>
-                    <p class="caption"><em>Website Interface:</em> Enter text, upload images, pick colors, and generate your QR code.</p>
+                    <p class="caption"><em>Initial interface where users can input text and interact with the application.</em></p>
                   </div>
                 </div>
               </div>
 
-              <!-- Example QR Codes (appended as simple images) -->
               <div class="spacer-30"></div>
-              <h2>Example QR Codes</h2>
-              <div class="append-images text-center">
-                <figure style="display:inline-block; margin:0 1rem;">
-                  <img src="imgs/2.gif" alt="QR Code 1" style="max-width:100%; height:auto;">
-                  <figcaption>QR Code 1</figcaption>
-                </figure>
-                <figure style="display:inline-block; margin:0 1rem;">
-                  <img src="imgs/5.gif" alt="QR Code 2" style="max-width:100%; height:auto;">
-                  <figcaption>QR Code 2</figcaption>
-                </figure>
-                <figure style="display:inline-block; margin:0 1rem;">
-                  <img src="imgs/3.gif" alt="QR Code 3" style="max-width:100%; height:auto;">
-                  <figcaption>QR Code 3</figcaption>
-                </figure>
-                <figure style="display:inline-block; margin:0 1rem;">
-                  <img src="imgs/6.gif" alt="QR Code 4" style="max-width:100%; height:auto;">
-                  <figcaption>QR Code 4</figcaption>
-                </figure>
-                <figure style="display:inline-block; margin:0 1rem;">
-                  <img src="imgs/4.gif" alt="QR Code 5" style="max-width:100%; height:auto;">
-                  <figcaption>QR Code 5</figcaption>
-                </figure>
+
+              <!-- After Processing -->
+              <h5>After Clicking the "Process Keywords" Button</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/2.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/2.png" alt="Keyword Process">
+                    </a>
+                    <p class="caption"><em>Interface after processing keywords, displaying the extracted keywords.</em></p>
+                  </div>
+                </div>
               </div>
 
-              <!-- Usage & Installation -->
               <div class="spacer-30"></div>
-              <div class="readme-wrapper">
-                <h2>Installation</h2>
-                <p style="color:#fff; line-height:1.3em; margin-bottom:20px;">
-                  git clone https://github.com/Nafi7393/Awesome-QR-Codes-Generator.git<br>
-                  cd Awesome-QR-Codes-Generator<br>
-                  pip install -r requirements.txt
-                </p>
-                <p style="color:#fff; line-height:1.3em;">
-                  streamlit run main.py
-                </p>
-                <div class="spacer-30"></div>
-                <h2>Usage</h2>
-                <ol style="color:#fff; line-height:1.3em;">
-                  <li>- Input the text you want to encode.</li>
-                  <li>- Upload an optional background image.</li>
-                  <li>- Choose QR code and background colors.</li>
-                  <li>- Click “Generate Now” to create your QR code.</li>
-                  <li>- Download your QR code with one click.</li>
-                </ol>
+
+              <!-- Details View -->
+              <h5>After Clicking the "Get details for" Button</h5>
+              <div class="lightbox-gallery">
+                <div class="row box-animation">
+                  <div class="col-xl-12 clip-animation">
+                    <a href="imgs/3.png" class="image lightbox" style="margin-bottom: 5px;">
+                      <img src="imgs/3.png" alt="Details View">
+                    </a>
+                    <p class="caption"><em>Interface showing definitions, synonyms, and antonyms for a selected keyword.</em></p>
+                  </div>
+                </div>
               </div>
+
+              <!-- Usage -->
+              <div class="spacer-30"></div>
+              <h2>Usage</h2>
+              <ol style="color:#fff; line-height:1.3em;">
+                <li>Clone the repository:
+                  <br><code>git clone https://github.com/Nafi7393/Keyword-Processor.git</code>
+                  <br><code>cd Keyword-Processor</code>
+                </li>
+                <li>Install dependencies:
+                  <br><code>pip install -r requirements.txt</code>
+                </li>
+                <li>Launch the Streamlit app:
+                  <br><code>streamlit run main.py</code>
+                </li>
+                <li>Open the provided URL in your web browser to access the application.</li>
+              </ol>
 
               <!-- Footer Navigation -->
               <div class="work-navigation spacer-60">
@@ -186,6 +192,7 @@
       </div>
     </div>
   </div>
+  <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg);"></div>
 
   <!-- Javascripts -->
   <script src="../../assets/js/jquery.js"></script>

@@ -1,9 +1,9 @@
 [
   {
-    "title": "Awesome QR Codes Generator",
+    "title": "GIF QR Codes Generator",
     "category": "programming",
     "tag": "Python - Pillow, Steamlit & Requests",
-    "link": "portfolio-works/Awesome-QR-Codes-Generator/awesome-qr-codes-generator.html",
+    "link": "portfolio-works/Awesome-QR-Codes-Generator/gif-qr-codes-generator.html",
     "image": "portfolio-works/Awesome-QR-Codes-Generator/cover.jpg"
   },
   {
@@ -19,6 +19,34 @@
     "tag": "Python - Flask & PostgreSQL",
     "link": "portfolio-works/Expenses-Tracker/expenses-tracker.html",
     "image": "portfolio-works/Expenses-Tracker/cover.jpg"
+  },
+  {
+    "title": "File Management Tool",
+    "category": "programming",
+    "tag": "Python - OS & PyQt5",
+    "link": "portfolio-works/File-Management-Tool/file-management-tool.html",
+    "image": "portfolio-works/File-Management-Tool/cover.jpg"
+  },
+  {
+    "title": "Keyword Processor",
+    "category": "programming",
+    "tag": "Python - streamlit, requests & matplotlib",
+    "link": "portfolio-works/Keyword-Processor/keyword-processor.html",
+    "image": "portfolio-works/Keyword-Processor/cover.jpg"
+  },
+  {
+    "title": "Midjourney Prompt Builder",
+    "category": "programming",
+    "tag": "Python - Gemini, API & Streamlit",
+    "link": "portfolio-works/Midjourney-Prompt-Builder/midjourney-prompt-builder.html",
+    "image": "portfolio-works/Midjourney-Prompt-Builder/cover.jpg"
+  },
+  {
+    "title": "Pinterest Post Maker",
+    "category": "programming",
+    "tag": "Python - Pillow",
+    "link": "portfolio-works/Pinterest-Post-Maker/pinterest-post-maker.html",
+    "image": "portfolio-works/Pinterest-Post-Maker/cover.jpg"
   },
   {
     "title": "Random Art Generator",
@@ -38,7 +66,14 @@
     "title": "Super TIC-TAC-TOE",
     "category": "programming",
     "tag": "Python - Pygame, AI Player",
-    "link": "portfolio-works/Super-TIC-TAC-TOE/Super-TIC-TAC-TOE.html",
+    "link": "portfolio-works/Super-TIC-TAC-TOE/super-TIC-TAC-TOE.html",
     "image": "portfolio-works/Super-TIC-TAC-TOE/cover.jpg"
+  },
+  {
+    "title": "Vector to Colorless",
+    "category": "programming",
+    "tag": "Python - Numpy & OpenCV",
+    "link": "portfolio-works/Vector-to-Colorless/vector-to-colorless.html",
+    "image": "portfolio-works/Vector-to-Colorless/cover.jpg"
   }
 ]

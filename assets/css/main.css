@@ -2639,3 +2639,8 @@ form .site-btn{
     grid-column: span 3;
   }
 }
+
+ul li p strong {
+	color: #e6ff00;
+	font-weight: 600;
+}
