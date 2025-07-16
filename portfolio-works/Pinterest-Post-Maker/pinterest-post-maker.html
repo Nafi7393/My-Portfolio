@@ -1,196 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Portfolio - Pinterest Post Maker</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Pinterest Post Maker – Python script to generate Pinterest-style images with overlaid text.">
-  <meta name="keywords" content="Pinterest, Python, PIL, threading, image generation, post maker">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Portfolio - Pinterest Post Maker</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Pinterest Post Maker – Python script to generate Pinterest-style images with overlaid text." />
+    <meta
+      name="keywords"
+      content="Pinterest, Python, PIL, threading, image generation, post maker" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon -->   
-  <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- Favicon -->
+    <link
+      href="../../assets/images/favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../assets/css/main.css"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
 
-  <!-- Google Web fonts -->    
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <!-- Google Web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
 
-  <!-- Font icons -->
-  <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css"/>
-  <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css"/>
+    <!-- Font icons -->
+    <link
+      rel="stylesheet"
+      href="../../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
 
-  <style>
-
-  </style>
-</head>
-<body class="scroll-animation-on">
-
-  <!-- Preloader -->
-  <div id="loader" class="preloader">
-    <div class="loading">
-      <div class="profile-image">
-        <img src="../../assets/images/profile-loader.jpg" alt="">
-        <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <circle class="js-circle circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
-          <circle class="js-circle circletwo" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
-        </svg>
+    <style></style>
+  </head>
+  <body class="scroll-animation-on">
+    <!-- Preloader -->
+    <div id="loader" class="preloader">
+      <div class="loading">
+        <div class="profile-image">
+          <img src="../../assets/images/profile-loader.jpg" alt="" />
+          <svg
+            width="100px"
+            height="100px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <circle
+              class="js-circle circle"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+            <circle
+              class="js-circle circletwo"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Preloader End -->
+    <!-- Preloader End -->
 
-  <div class="page-cover">
-    <div id="page-scroll">
-      <div class="barba-wrapper" data-barba="wrapper">
-        <main data-barba="container">
+    <div class="page-cover">
+      <div id="page-scroll">
+        <div class="barba-wrapper" data-barba="wrapper">
+          <main data-barba="container">
+            <div class="container">
+              <div class="page-wrapper">
+                <!-- Header -->
+                <header id="fixed">
+                  <div class="hamburger hamburger--elastic">
+                    <span class="hamburger-box"
+                      ><span class="hamburger-inner"></span
+                    ></span>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../../resume.html">Resume</a></li>
+                      <li><a href="../../portfolio.html">Portfolio</a></li>
+                      <li>
+                        <a href="../../achievements.html">Achievements</a>
+                      </li>
+                      <li><a href="../../blog.html">Blog</a></li>
+                      <li><a href="../../contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </header>
 
-          <div class="container">
-            <div class="page-wrapper">
+                <div class="spacer-30"></div>
+                <h1 class="big-title">Pinterest Post Maker</h1>
+                <p>
+                  This Python script generates Pinterest‐style post images by
+                  overlaying text on background images. It utilizes threading
+                  for concurrent image generation and supports customization of
+                  text styling.
+                </p>
 
-              <!-- Header -->
-              <header id="fixed">
-                <div class="hamburger hamburger--elastic">
-                  <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-                </div>
-                <nav>
-                  <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../resume.html">Resume</a></li>
-                    <li><a href="../../portfolio.html">Portfolio</a></li>
-                    <li><a href="../../blog.html">Blog</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-              </header>
+                <!-- Explore the Project -->
+                <div class="spacer-30"></div>
+                <h2>Explore the Project</h2>
+                <p>
+                  Source code available on GitHub:
+                  <a
+                    href="https://github.com/Nafi7393/PINTEREST-POST-MAKER"
+                    target="_blank"
+                    style="color: #e6ff00; text-decoration: underline">
+                    Source on GitHub
+                  </a>
+                </p>
 
-              <div class="spacer-30"></div>
-              <h1 class="big-title">Pinterest Post Maker</h1>
-              <p>
-                This Python script generates Pinterest‐style post images by overlaying text on background images. It utilizes threading for concurrent image generation and supports customization of text styling.
-              </p>
+                <!-- Requirements -->
+                <div class="spacer-30"></div>
+                <h2>Requirements</h2>
+                <ul>
+                  <li>
+                    <p><strong>Python 3.x</strong></p>
+                  </li>
+                  <li>
+                    <p><strong>PIL (Python Imaging Library)</strong></p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>`impact.ttf` font file</strong> (or specify your
+                      own font)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Background images</strong> in the
+                      <code>background_images</code> folder
+                    </p>
+                  </li>
+                  <li>
+                    <p><strong>Input text CSV</strong> (`pin_text.csv`)</p>
+                  </li>
+                </ul>
 
-              <!-- Explore the Project -->
-              <div class="spacer-30"></div>
-              <h2>Explore the Project</h2>
-              <p>
-                Source code available on GitHub:
-                <a href="https://github.com/Nafi7393/PINTEREST-POST-MAKER" target="_blank" style="color: #e6ff00; text-decoration: underline">
-                  Source on GitHub
-                </a>
-              </p>
-
-              <!-- Requirements -->
-              <div class="spacer-30"></div>
-              <h2>Requirements</h2>
-              <ul>
-                <li><p><strong>Python 3.x</strong></p></li>
-                <li><p><strong>PIL (Python Imaging Library)</strong></p></li>
-                <li><p><strong>`impact.ttf` font file</strong> (or specify your own font)</p></li>
-                <li><p><strong>Background images</strong> in the <code>background_images</code> folder</p></li>
-                <li><p><strong>Input text CSV</strong> (`pin_text.csv`)</p></li>
-              </ul>
-
-              <!-- Installation -->
-              <div class="spacer-30"></div>
-              <h2>Installation</h2>
-<pre style="color:#fff; line-height:1.3em;">
+                <!-- Installation -->
+                <div class="spacer-30"></div>
+                <h2>Installation</h2>
+                <pre style="color: #fff; line-height: 1.3em">
 git clone https://github.com/Nafi7393/PINTEREST-POST-MAKER.git
 cd PINTEREST-POST-MAKER
 
 pip install pillow
-</pre>
+</pre
+                >
 
-              <!-- Usage -->
-              <div class="spacer-30"></div>
-              <h2>Usage</h2>
-              <p>Modify <code>pin_text.csv</code> with your desired text lines. Then run: python main.py</p>
-              <p>You can adjust parameters in <code>main.py</code>, such as <code>max_limit</code> in the <code>fire_pins</code> function for batch generation.</p>
+                <!-- Usage -->
+                <div class="spacer-30"></div>
+                <h2>Usage</h2>
+                <p>
+                  Modify <code>pin_text.csv</code> with your desired text lines.
+                  Then run: python main.py
+                </p>
+                <p>
+                  You can adjust parameters in <code>main.py</code>, such as
+                  <code>max_limit</code> in the <code>fire_pins</code> function
+                  for batch generation.
+                </p>
 
-              <!-- Example Images -->
-              <div class="spacer-30"></div>
-              <h2>Example Images</h2>
-              <div class="spacer-10"></div>
-              <div class="swiper work-carousel clip-animation" data-delay="1">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="imgs/output/post_1.png" alt="Example Post 1">
+                <!-- Example Images -->
+                <div class="spacer-30"></div>
+                <h2>Example Images</h2>
+                <div class="spacer-10"></div>
+                <div class="swiper work-carousel clip-animation" data-delay="1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="imgs/output/post_1.png" alt="Example Post 1" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="imgs/output/post_2.png" alt="Example Post 2" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="imgs/output/post_3.png" alt="Example Post 3" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="imgs/output/post_7.png" alt="Example Post 4" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="imgs/output/post_5.png" alt="Example Post 5" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="imgs/output/post_6.png" alt="Example Post 6" />
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/output/post_2.png" alt="Example Post 2">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/output/post_3.png" alt="Example Post 3">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/output/post_4.png" alt="Example Post 4">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/output/post_5.png" alt="Example Post 5">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="imgs/output/post_6.png" alt="Example Post 6">
-                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+
+                <!-- Customization -->
+                <div class="spacer-30"></div>
+                <h2>Customization</h2>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Text Styling:</strong> Modify
+                      <code>text_color</code>, <code>font_path</code>,
+                      <code>base_font_size</code>, and
+                      <code>font_increase_size</code> in the
+                      <code>PinMaker</code> class.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Backgrounds:</strong> Add or change images in the
+                      <code>background_images</code> folder.
+                    </p>
+                  </li>
+                </ul>
+
+                <!-- Notes -->
+                <div class="spacer-30"></div>
+                <h2>Notes</h2>
+                <p>
+                  Ensure the CSV file (`pin_text.csv`) is correctly formatted
+                  with each line of text in the first column. The script uses
+                  threading for concurrent processing, enabling efficient batch
+                  creation.
+                </p>
+
+                <!-- Footer Navigation -->
+                <div class="work-navigation spacer-60">
+                  <a class="case" href="../../portfolio.html">
+                    <svg
+                      height="16"
+                      viewBox="0 0 40 40"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect height="14" width="14" x="1" y="25" />
+                      <rect height="14" width="14" x="25" y="25" />
+                      <rect height="14" width="14" x="1" y="1" />
+                      <rect height="14" width="14" x="25" y="1" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-
-              <!-- Customization -->
-              <div class="spacer-30"></div>
-              <h2>Customization</h2>
-              <ul>
-                <li><p><strong>Text Styling:</strong> Modify <code>text_color</code>, <code>font_path</code>, <code>base_font_size</code>, and <code>font_increase_size</code> in the <code>PinMaker</code> class.</p></li>
-                <li><p><strong>Backgrounds:</strong> Add or change images in the <code>background_images</code> folder.</p></li>
-              </ul>
-
-              <!-- Notes -->
-              <div class="spacer-30"></div>
-              <h2>Notes</h2>
-              <p>
-                Ensure the CSV file (`pin_text.csv`) is correctly formatted with each line of text in the first column. The script uses threading for concurrent processing, enabling efficient batch creation.
-              </p>
-
-              <!-- Footer Navigation -->
-              <div class="work-navigation spacer-60">
-                <a class="case" href="../../portfolio.html">
-                  <svg height="16" viewBox="0 0 40 40" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <rect height="14" width="14" x="1" y="25"/>
-                    <rect height="14" width="14" x="25" y="25"/>
-                    <rect height="14" width="14" x="1" y="1"/>
-                    <rect height="14" width="14" x="25" y="1"/>
-                  </svg>
-                </a>
-              </div>
-
             </div>
-          </div>
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-content">
-        <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+            <footer>
+              <div class="container">
+                <div class="footer-inner">
+                  <div class="footer-content">
+                    <p>
+                      © <span id="year"></span> Naich Naznafi. All rights
+                      reserved.
+                    </p>
+                  </div>
+                  <ul class="social">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/naich-naznafi"
+                        target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="mailto:contact.nafi779@gmail.com" target="_blank"
+                        ><i class="fas fa-envelope"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </main>
+        </div>
       </div>
-      <ul class="social">
-        <li><a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="mailto:contact.nafi779@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-      </ul>
     </div>
-  </div>
-</footer>
-        </main>
-      </div>
-    </div>
-  </div>
-  <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg);"></div>
+    <div
+      class="bg-image"
+      style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
 
-  <!-- Javascripts -->
-  <script src="../../assets/js/jquery.js"></script>
-  <script src="../../assets/js/plugins.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
-  <script src="../../assets/js/map.js"></script>
-  <script src="../../assets/js/main.js"></script>
-
-</body>
+    <!-- Javascripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+    <script src="../../assets/js/map.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
 </html>

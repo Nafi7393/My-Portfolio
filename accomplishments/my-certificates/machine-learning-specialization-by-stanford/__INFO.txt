@@ -1,0 +1,5 @@
+title: AI Machine Learning - Specialization
+verify: https://www.coursera.org/verify/specialization/UOX0RUFWQ4JY
+date: Dec 2024
+issued by: Stanford University & DeepLearning
+tags: Machine Learning, Artificial Intelligence (AI), Deep Learning, TensorFlow, Artificial Neural Networks

@@ -1,0 +1,290 @@
+[
+  {
+    "date": "Apr 2025",
+    "title": "Qubit\u2019s Introduction to Quantum Computing",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/the-coding-school/main-certificate.jpg",
+        "alt": "Certificate: Qubit\u2019s Introduction to Quantum Computing"
+      }
+    ],
+    "issuer": "The Coding School",
+    "tags": [
+      "Quantum Mechanics Fundamentals",
+      "Quantum Gates & Circuits",
+      "Quantum Algorithms",
+      "Python Programming",
+      "Quantum Key Distribution"
+    ],
+    "verifyLink": "",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "0.0"
+  },
+  {
+    "date": "Dec 2024",
+    "title": "AI Machine Learning - Specialization",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/main-certificate.jpg",
+        "alt": "Certificate: AI Machine Learning - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/1 - Supervised Machine Learning Regression and Classification - YEOHH33WZ3SP.jpg",
+        "alt": "Certificate: AI Machine Learning - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/2 - Advanced Learning Algorithms - LMW8FYCPXP3J.jpg",
+        "alt": "Certificate: AI Machine Learning - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/3 - Unsupervised Learning, Recommenders, Reinforcement Learning - 3TVRYPA4MK27.jpg",
+        "alt": "Certificate: AI Machine Learning - Specialization"
+      }
+    ],
+    "issuer": "Stanford University & DeepLearning",
+    "tags": [
+      "Machine Learning",
+      "Artificial Intelligence (AI)",
+      "Deep Learning",
+      "TensorFlow",
+      "Artificial Neural Networks"
+    ],
+    "verifyLink": "https://www.coursera.org/verify/specialization/UOX0RUFWQ4JY",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "0.2"
+  },
+  {
+    "date": "Jul 2024",
+    "title": "Python Programming Internship",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/internship-and-completion/main-certificate.jpg",
+        "alt": "Certificate: Python Programming Internship"
+      }
+    ],
+    "issuer": "Encryptix",
+    "tags": [
+      "Python Programming",
+      "Internship",
+      "Software Development",
+      "Programming Concepts"
+    ],
+    "verifyLink": "",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "0.4"
+  },
+  {
+    "date": "Jun 2024",
+    "title": "Django for Everybody - Specialization",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/django-for-everybody-specialization/main-certificate.jpg",
+        "alt": "Certificate: Django for Everybody - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/django-for-everybody-specialization/1 - Web Application Technologies and Django.jpg",
+        "alt": "Certificate: Django for Everybody - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/django-for-everybody-specialization/2 - Building Web Applications in Django.jpg",
+        "alt": "Certificate: Django for Everybody - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/django-for-everybody-specialization/3 - Django Features and Libraries.jpg",
+        "alt": "Certificate: Django for Everybody - Specialization"
+      },
+      {
+        "src": "accomplishments/my-certificates/django-for-everybody-specialization/4 - Using JavaScript and JSON in Django.jpg",
+        "alt": "Certificate: Django for Everybody - Specialization"
+      }
+    ],
+    "issuer": "University of Michigan",
+    "tags": [
+      "Django",
+      "Django REST Framework",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "verifyLink": "https://coursera.org/verify/specialization/97QK9SYP3YRN",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "0.6"
+  },
+  {
+    "date": "Mar 2024",
+    "title": "Machine Learning with Python",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/machine-learning-with-python/main-certificate.jpg",
+        "alt": "Certificate: Machine Learning with Python"
+      }
+    ],
+    "issuer": "IBM",
+    "tags": [
+      "Machine Learning",
+      "Regression",
+      "Classification",
+      "SciPy",
+      "Scikit-Learn"
+    ],
+    "verifyLink": "https://coursera.org/verify/SYT555ZLZUF9",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "0.8"
+  },
+  {
+    "date": "Feb 2024",
+    "title": "Coding Interview Preparation",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/coding-interview-preparation/main-certificate.jpg",
+        "alt": "Certificate: Coding Interview Preparation"
+      }
+    ],
+    "issuer": "Meta",
+    "tags": [
+      "Data Structures",
+      "Computer Science",
+      "Algorithms",
+      "Communication",
+      "Pseudocode"
+    ],
+    "verifyLink": "https://coursera.org/verify/KKH35AU6UAKY",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "1.0"
+  },
+  {
+    "date": "Feb 2024",
+    "title": "Python for Data Science, AI & Development",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/python-for-data-science-ai-and-development/main-certificate.jpg",
+        "alt": "Certificate: Python for Data Science, AI & Development"
+      }
+    ],
+    "issuer": "IBM",
+    "tags": [
+      "Data Science",
+      "Data Analysis",
+      "Python Programming",
+      "NumPy",
+      "Pandas"
+    ],
+    "verifyLink": "https://coursera.org/verify/UZHBU947FFA2",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "1.2"
+  },
+  {
+    "date": "Feb 2024",
+    "title": "Solidworks Workshop 2023",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/solidworks-workshop-2023-from-caders/main-certificate.jpg",
+        "alt": "Certificate: Solidworks Workshop 2023"
+      }
+    ],
+    "issuer": "CADers",
+    "tags": [
+      "SOLIDWORKS",
+      "3D Modeling",
+      "CAD",
+      "Mechanical Design",
+      "Engineering Workshop"
+    ],
+    "verifyLink": "",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "1.4"
+  },
+  {
+    "date": "Jan 2024",
+    "title": "Write Professional Emails in English",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/write-professional-emails-in-english/main-certificate.jpg",
+        "alt": "Certificate: Write Professional Emails in English"
+      }
+    ],
+    "issuer": "Georgia Institute of Technology",
+    "tags": [
+      "Communication",
+      "Email Strategy",
+      "Professional Writing",
+      "Business Communication"
+    ],
+    "verifyLink": "https://coursera.org/verify/HCLVWHFWRLN4",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "1.6"
+  },
+  {
+    "date": "Oct 2023",
+    "title": "Crash Course on Python",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/crash-course-on-python-goolge/main-certificate.jpg",
+        "alt": "Certificate: Crash Course on Python"
+      }
+    ],
+    "issuer": "Google",
+    "tags": [
+      "Python Programming",
+      "Data Structures",
+      "Programming Concepts",
+      "Object-Oriented Programming (OOP)"
+    ],
+    "verifyLink": "https://www.coursera.org/verify/VCF85JBKM3HR",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "1.8"
+  },
+  {
+    "date": "Sep 2023",
+    "title": "Prompt Engineering for ChatGPT",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/prompt-engineering-for-chatgpt/main-certificate.jpg",
+        "alt": "Certificate: Prompt Engineering for ChatGPT"
+      }
+    ],
+    "issuer": "Vanderbilt University",
+    "tags": [
+      "Prompt Engineering",
+      "ChatGPT",
+      "Large Language Models (LLM)",
+      "AI"
+    ],
+    "verifyLink": "https://www.coursera.org/verify/8LEMRKW687DA",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "2.0"
+  },
+  {
+    "date": "Aug 2023",
+    "title": "AutoCAD Workshop 2023",
+    "images": [
+      {
+        "src": "accomplishments/my-certificates/autocad-workshop-2023-from-caders/main-certificate.jpg",
+        "alt": "Certificate: AutoCAD Workshop 2023"
+      }
+    ],
+    "issuer": "CADers",
+    "tags": [
+      "AutoCAD",
+      "2D Drafting",
+      "CAD",
+      "Technical Drawing",
+      "Engineering Design"
+    ],
+    "verifyLink": "",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "2.2"
+  }
+]

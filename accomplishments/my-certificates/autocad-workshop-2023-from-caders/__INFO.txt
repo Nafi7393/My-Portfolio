@@ -1,0 +1,5 @@
+title: AutoCAD Workshop 2023
+verify:
+date: Aug 2023
+issued by: CADers
+tags: AutoCAD, 2D Drafting, CAD, Technical Drawing, Engineering Design

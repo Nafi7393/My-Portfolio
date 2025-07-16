@@ -1,0 +1,5 @@
+title: Django for Everybody - Specialization
+verify: https://coursera.org/verify/specialization/97QK9SYP3YRN
+date: Jun 2024
+issued by: University of Michigan
+tags: Django, Django REST Framework, HTML, CSS, JavaScript

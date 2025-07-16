@@ -1,0 +1,5 @@
+title: Introduction to Generative AI
+verify: https://www.cloudskillsboost.google/public_profiles/965f5e8f-c070-4c58-a568-906165c8e2ea/badges/4960457
+date: Sep 2023
+issued by: Google Cloud Skills Boost
+tags: Generative AI, AI Fundamentals, Machine Learning, Prompt Engineering, Google Cloud

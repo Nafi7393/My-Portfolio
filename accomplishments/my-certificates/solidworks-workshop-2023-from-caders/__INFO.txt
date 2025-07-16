@@ -1,0 +1,5 @@
+title: Solidworks Workshop 2023
+verify:
+date: Feb 2024
+issued by: CADers
+tags: SOLIDWORKS, 3D Modeling, CAD, Mechanical Design, Engineering Workshop

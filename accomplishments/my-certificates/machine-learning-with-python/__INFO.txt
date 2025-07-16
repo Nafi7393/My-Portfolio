@@ -1,0 +1,5 @@
+title: Machine Learning with Python
+verify: https://coursera.org/verify/SYT555ZLZUF9
+date: Mar 2024
+issued by: IBM
+tags: Machine Learning, Regression, Classification, SciPy, Scikit-Learn

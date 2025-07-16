@@ -1,0 +1,5 @@
+title: Python for Data Science, AI & Development
+verify: https://coursera.org/verify/UZHBU947FFA2
+date: Feb 2024
+issued by: IBM
+tags: Data Science, Data Analysis, Python Programming, NumPy, Pandas

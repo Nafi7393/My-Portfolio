@@ -1,0 +1,5 @@
+title: Prompt Engineering for ChatGPT
+verify: https://www.coursera.org/verify/8LEMRKW687DA
+date: Sep 2023
+issued by: Vanderbilt University
+tags: Prompt Engineering, ChatGPT, Large Language Models (LLM), AI

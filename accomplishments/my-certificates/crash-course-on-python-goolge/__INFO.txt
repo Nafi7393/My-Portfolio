@@ -1,0 +1,5 @@
+title: Crash Course on Python
+verify: https://www.coursera.org/verify/VCF85JBKM3HR
+date: Oct 2023
+issued by: Google
+tags: Python Programming, Data Structures, Programming Concepts, Object-Oriented Programming (OOP)

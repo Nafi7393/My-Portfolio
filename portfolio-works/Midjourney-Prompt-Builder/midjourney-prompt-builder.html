@@ -1,251 +1,382 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Portfolio - Midjourney Prompt Generator</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Midjourney Prompt Generator – Streamlit app for crafting high-quality Midjourney prompts via the Gemini API.">
-  <meta name="keywords" content="Midjourney Prompt Generator, Streamlit, Gemini API, prompt builder, AI art">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Portfolio - Midjourney Prompt Generator</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Midjourney Prompt Generator – Streamlit app for crafting high-quality Midjourney prompts via the Gemini API." />
+    <meta
+      name="keywords"
+      content="Midjourney Prompt Generator, Streamlit, Gemini API, prompt builder, AI art" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon -->   
-  <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- Favicon -->
+    <link
+      href="../../assets/images/favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../assets/css/main.css"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
 
-  <!-- Google Web fonts -->    
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <!-- Google Web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
 
-  <!-- Font icons -->
-  <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css"/>
-  <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css"/>
+    <!-- Font icons -->
+    <link
+      rel="stylesheet"
+      href="../../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
 
-  <style>
-
-  </style>
-</head>
-<body class="scroll-animation-on">
-
-  <!-- Preloader -->
-  <div id="loader" class="preloader">
-    <div class="loading">
-      <div class="profile-image">
-        <img src="../../assets/images/profile-loader.jpg" alt="">
-        <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <circle class="js-circle circle" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
-          <circle class="js-circle circletwo" cx="50" cy="50" r="48" stroke="white" stroke-width="2" fill="none"/>
-        </svg>
+    <style></style>
+  </head>
+  <body class="scroll-animation-on">
+    <!-- Preloader -->
+    <div id="loader" class="preloader">
+      <div class="loading">
+        <div class="profile-image">
+          <img src="../../assets/images/profile-loader.jpg" alt="" />
+          <svg
+            width="100px"
+            height="100px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <circle
+              class="js-circle circle"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+            <circle
+              class="js-circle circletwo"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Preloader End -->
+    <!-- Preloader End -->
 
-  <div class="page-cover">
-    <div id="page-scroll">
-      <div class="barba-wrapper" data-barba="wrapper">
-        <main data-barba="container">
+    <div class="page-cover">
+      <div id="page-scroll">
+        <div class="barba-wrapper" data-barba="wrapper">
+          <main data-barba="container">
+            <div class="container">
+              <div class="page-wrapper">
+                <!-- Header -->
+                <header id="fixed">
+                  <div class="hamburger hamburger--elastic">
+                    <span class="hamburger-box"
+                      ><span class="hamburger-inner"></span
+                    ></span>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../../resume.html">Resume</a></li>
+                      <li><a href="../../portfolio.html">Portfolio</a></li>
+                      <li>
+                        <a href="../../achievements.html">Achievements</a>
+                      </li>
+                      <li><a href="../../blog.html">Blog</a></li>
+                      <li><a href="../../contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </header>
 
-          <div class="container">
-            <div class="page-wrapper">
+                <div class="spacer-30"></div>
+                <h1 class="big-title">Midjourney Prompt Generator</h1>
+                <p>
+                  The Midjourney Prompt Generator is a Streamlit application
+                  that helps users craft high-quality prompts for Midjourney by
+                  integrating with the Gemini API. Simply enter your base idea,
+                  style preferences, mood, and more—and get multiple refined
+                  prompts ready to feed into Midjourney.
+                </p>
 
-              <!-- Header -->
-              <header id="fixed">
-                <div class="hamburger hamburger--elastic">
-                  <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-                </div>
-                <nav>
-                  <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../resume.html">Resume</a></li>
-                    <li><a href="../../portfolio.html">Portfolio</a></li>
-                    <li><a href="../../blog.html">Blog</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-              </header>
+                <!-- Explore the Project -->
+                <div class="spacer-30"></div>
+                <h2>Explore the Project</h2>
+                <p>
+                  Source code available on GitHub:
+                  <a
+                    href="https://github.com/Nafi7393/Midjourney-Prompt-Builder"
+                    target="_blank"
+                    style="color: #e6ff00; text-decoration: underline">
+                    Source on GitHub
+                  </a>
+                </p>
 
-              <div class="spacer-30"></div>
-              <h1 class="big-title">Midjourney Prompt Generator</h1>
-              <p>
-                The Midjourney Prompt Generator is a Streamlit application that helps users craft high-quality prompts for Midjourney by integrating with the Gemini API. Simply enter your base idea, style preferences, mood, and more—and get multiple refined prompts ready to feed into Midjourney.
-              </p>
+                <!-- Features -->
+                <div class="spacer-30"></div>
+                <h2>Features</h2>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>- User-Friendly Interface:</strong> Streamlit web
+                      app for easy input of prompt parameters.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Customizable Prompts:</strong> Specify base
+                      idea, art style, mood, color palette, and more.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- API Integration:</strong> Generates refined
+                      prompts via the Gemini API.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Prompt Management:</strong> Displays multiple
+                      generated prompts ready for Midjourney.
+                    </p>
+                  </li>
+                </ul>
 
-              <!-- Explore the Project -->
-              <div class="spacer-30"></div>
-              <h2>Explore the Project</h2>
-              <p>
-                Source code available on GitHub:
-                <a href="https://github.com/Nafi7393/Midjourney-Prompt-Builder" target="_blank" style="color: #e6ff00; text-decoration: underline">
-                  Source on GitHub
-                </a>
-              </p>
+                <!-- Getting Started -->
+                <div class="spacer-30"></div>
+                <h2>Getting Started</h2>
+                <div class="spacer-10"></div>
+                <h5>Prerequisites</h5>
+                <ul style="color: #fff; line-height: 1.3em">
+                  <li>Python 3.7+</li>
+                  <li>Streamlit</li>
+                  <li>
+                    <code>python-dotenv</code> (for environment variables)
+                  </li>
+                  <li><code>google-generativeai</code> (Gemini API client)</li>
+                </ul>
+                <div class="spacer-10"></div>
+                <h5>Installation</h5>
+                <ol style="color: #fff; line-height: 1.3em">
+                  <li>
+                    Clone the repo: <br /><code
+                      >git clone
+                      https://github.com/Nafi7393/Midjourney-Prompt-Builder.git</code
+                    >
+                    <br /><code>cd Midjourney-Prompt-Builder</code>
+                  </li>
+                  <li>
+                    (Optional) Create & activate a virtual environment:
+                    <br /><code>python -m venv venv</code> <br /><code
+                      >source venv/bin/activate</code
+                    >
+                    (or <code>venv\Scripts\activate</code> on Windows)
+                  </li>
+                  <li>
+                    Install dependencies: <br /><code
+                      >pip install -r requirements.txt</code
+                    >
+                  </li>
+                  <li>
+                    Create a <code>.env</code> file with your Gemini API key:
+                    <br /><code>GEMINI_API_KEY=your_gemini_api_key</code>
+                  </li>
+                </ol>
 
-              <!-- Features -->
-              <div class="spacer-30"></div>
-              <h2>Features</h2>
-              <ul>
-                <li><p><strong>- User-Friendly Interface:</strong> Streamlit web app for easy input of prompt parameters.</p></li>
-                <li><p><strong>- Customizable Prompts:</strong> Specify base idea, art style, mood, color palette, and more.</p></li>
-                <li><p><strong>- API Integration:</strong> Generates refined prompts via the Gemini API.</p></li>
-                <li><p><strong>- Prompt Management:</strong> Displays multiple generated prompts ready for Midjourney.</p></li>
-              </ul>
+                <!-- Usage -->
+                <div class="spacer-30"></div>
+                <h2>Usage</h2>
+                <ol style="color: #fff; line-height: 1.3em">
+                  <li>
+                    Launch the Streamlit app: <br /><code
+                      >streamlit run app.py</code
+                    >
+                  </li>
+                  <li>
+                    Open <code>http://localhost:8501</code> in your browser.
+                  </li>
+                  <li>
+                    Fill in your base idea, style, mood, elements, and other
+                    details.
+                  </li>
+                  <li>
+                    Click <strong>Generate Prompts</strong> to see your tailored
+                    Midjourney prompts.
+                  </li>
+                </ol>
 
-              <!-- Getting Started -->
-              <div class="spacer-30"></div>
-              <h2>Getting Started</h2>
-              <div class="spacer-10"></div>
-              <h5>Prerequisites</h5>
-              <ul style="color:#fff; line-height:1.3em;">
-                <li>Python 3.7+</li>
-                <li>Streamlit</li>
-                <li><code>python-dotenv</code> (for environment variables)</li>
-                <li><code>google-generativeai</code> (Gemini API client)</li>
-              </ul>
-              <div class="spacer-10"></div>
-              <h5>Installation</h5>
-              <ol style="color:#fff; line-height:1.3em;">
-                <li>Clone the repo:
-                  <br><code>git clone https://github.com/Nafi7393/Midjourney-Prompt-Builder.git</code>
-                  <br><code>cd Midjourney-Prompt-Builder</code>
-                </li>
-                <li>(Optional) Create & activate a virtual environment:
-                  <br><code>python -m venv venv</code>
-                  <br><code>source venv/bin/activate</code> (or <code>venv\Scripts\activate</code> on Windows)
-                </li>
-                <li>Install dependencies:
-                  <br><code>pip install -r requirements.txt</code>
-                </li>
-                <li>Create a <code>.env</code> file with your Gemini API key:
-                  <br><code>GEMINI_API_KEY=your_gemini_api_key</code>
-                </li>
-              </ol>
+                <!-- Screenshots -->
+                <div class="spacer-30"></div>
+                <h2>Screenshots</h2>
+                <div class="spacer-10"></div>
 
-              <!-- Usage -->
-              <div class="spacer-30"></div>
-              <h2>Usage</h2>
-              <ol style="color:#fff; line-height:1.3em;">
-                <li>Launch the Streamlit app:
-                  <br><code>streamlit run app.py</code>
-                </li>
-                <li>Open <code>http://localhost:8501</code> in your browser.</li>
-                <li>Fill in your base idea, style, mood, elements, and other details.</li>
-                <li>Click <strong>Generate Prompts</strong> to see your tailored Midjourney prompts.</li>
-              </ol>
-
-              <!-- Screenshots -->
-              <div class="spacer-30"></div>
-              <h2>Screenshots</h2>
-              <div class="spacer-10"></div>
-
-              <!-- Interface -->
-              <h5>Interface</h5>
-              <div class="lightbox-gallery">
-                <div class="row box-animation">
-                  <div class="col-xl-12 clip-animation">
-                    <a href="imgs/interface.png" class="image lightbox" style="margin-bottom: 5px;">
-                      <img src="imgs/interface.png" alt="Interface">
-                    </a>
-                    <p class="caption"><em>Streamlit interface for entering prompt parameters.</em></p>
+                <!-- Interface -->
+                <h5>Interface</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a
+                        href="imgs/interface.png"
+                        class="image lightbox"
+                        style="margin-bottom: 5px">
+                        <img src="imgs/interface.png" alt="Interface" />
+                      </a>
+                      <p class="caption">
+                        <em
+                          >Streamlit interface for entering prompt
+                          parameters.</em
+                        >
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="spacer-30"></div>
+                <div class="spacer-30"></div>
 
-              <!-- Generated Prompts -->
-              <h5>Generated Prompts</h5>
-              <div class="lightbox-gallery">
-                <div class="row box-animation">
-                  <div class="col-xl-12 clip-animation">
-                    <a href="imgs/prompts.png" class="image lightbox" style="margin-bottom: 5px;">
-                      <img src="imgs/prompts.png" alt="Generated Prompts">
-                    </a>
-                    <p class="caption"><em>Example prompts generated by the application.</em></p>
+                <!-- Generated Prompts -->
+                <h5>Generated Prompts</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a
+                        href="imgs/prompts.png"
+                        class="image lightbox"
+                        style="margin-bottom: 5px">
+                        <img src="imgs/prompts.png" alt="Generated Prompts" />
+                      </a>
+                      <p class="caption">
+                        <em>Example prompts generated by the application.</em>
+                      </p>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Sample Results -->
+                <div class="spacer-30"></div>
+                <h5>Sample Prompt & Result</h5>
+                <div class="swiper work-carousel clip-animation" data-delay="1">
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                      <img src="imgs/result-1.png" alt="Result 1" />
+                      <p
+                        class="slide-prompt"
+                        style="
+                          color: black;
+                          text-align: left;
+                          font-size: 16px;
+                          margin-left: 20px;
+                        ">
+                        <strong>Prompt:</strong> A joyful dog with a big, bright
+                        red balloon, popping with vibrant colors, comic book
+                        style, white background.
+                      </p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <img src="imgs/result-2.png" alt="Result 2" />
+                      <p
+                        class="slide-prompt"
+                        style="
+                          color: black;
+                          text-align: left;
+                          font-size: 16px;
+                          margin-left: 20px;
+                        ">
+                        <strong>Prompt:</strong> A joyful dog with a bright red
+                        balloon, pop art style, bold outlines, white background.
+                      </p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <img src="imgs/result-3.png" alt="Result 3" />
+                      <p
+                        class="slide-prompt"
+                        style="
+                          color: black;
+                          text-align: left;
+                          font-size: 16px;
+                          margin-left: 20px;
+                        ">
+                        <strong>Prompt:</strong> A joyful dog with a bright red
+                        balloon, wearing a blue collar, pop art style, white
+                        background, t-shirt design aesthetic.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- pagination bullets -->
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Footer Navigation -->
+                <div class="work-navigation spacer-60">
+                  <a class="case" href="../../portfolio.html">
+                    <svg
+                      height="16"
+                      viewBox="0 0 40 40"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect height="14" width="14" x="1" y="25" />
+                      <rect height="14" width="14" x="25" y="25" />
+                      <rect height="14" width="14" x="1" y="1" />
+                      <rect height="14" width="14" x="25" y="1" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-
-              <!-- Sample Results -->
-              <div class="spacer-30"></div>
-              <h5>Sample Prompt & Result</h5>
-<div class="swiper work-carousel clip-animation" data-delay="1">
-  <div class="swiper-wrapper">
-
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <img src="imgs/result-1.png" alt="Result 1">
-      <p class="slide-prompt" style="color: black; text-align: left; font-size: 16px; margin-left: 20px;">
-        <strong>Prompt:</strong> A joyful dog with a big, bright red balloon, popping with vibrant colors, comic book style, white background.
-      </p>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <img src="imgs/result-2.png" alt="Result 2">
-      <p class="slide-prompt" style="color: black; text-align: left; font-size: 16px; margin-left: 20px;">
-        <strong>Prompt:</strong> A joyful dog with a bright red balloon, pop art style, bold outlines, white background.
-      </p>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <img src="imgs/result-3.png" alt="Result 3">
-      <p class="slide-prompt" style="color: black; text-align: left; font-size: 16px; margin-left: 20px;">
-        <strong>Prompt:</strong> A joyful dog with a bright red balloon, wearing a blue collar, pop art style, white background, t-shirt design aesthetic.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- pagination bullets -->
-  <div class="swiper-pagination"></div>
-</div>
-
-
-              <!-- Footer Navigation -->
-              <div class="work-navigation spacer-60">
-                <a class="case" href="../../portfolio.html">
-                  <svg height="16" viewBox="0 0 40 40" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <rect height="14" width="14" x="1" y="25"/>
-                    <rect height="14" width="14" x="25" y="25"/>
-                    <rect height="14" width="14" x="1" y="1"/>
-                    <rect height="14" width="14" x="25" y="1"/>
-                  </svg>
-                </a>
-              </div>
-
             </div>
-          </div>
 
-          <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-content">
-        <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+            <!-- Footer -->
+            <footer>
+              <div class="container">
+                <div class="footer-inner">
+                  <div class="footer-content">
+                    <p>
+                      © <span id="year"></span> Naich Naznafi. All rights
+                      reserved.
+                    </p>
+                  </div>
+                  <ul class="social">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/naich-naznafi"
+                        target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="mailto:contact.nafi779@gmail.com" target="_blank"
+                        ><i class="fas fa-envelope"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </main>
+        </div>
       </div>
-      <ul class="social">
-        <li><a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="mailto:contact.nafi779@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-      </ul>
     </div>
-  </div>
-</footer>
+    <div
+      class="bg-image"
+      style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
 
-        </main>
-      </div>
-    </div>
-  </div>
-  <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg);"></div>
-
-  <!-- Javascripts -->
-  <script src="../../assets/js/jquery.js"></script>
-  <script src="../../assets/js/plugins.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
-  <script src="../../assets/js/map.js"></script>
-  <script src="../../assets/js/main.js"></script>
-
-</body>
+    <!-- Javascripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+    <script src="../../assets/js/map.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
 </html>

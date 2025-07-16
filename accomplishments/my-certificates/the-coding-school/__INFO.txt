@@ -1,0 +1,5 @@
+title: Qubit’s Introduction to Quantum Computing
+verify:
+date: Apr 2025
+issued by: The Coding School
+tags: Quantum Mechanics Fundamentals, Quantum Gates & Circuits, Quantum Algorithms, Python Programming, Quantum Key Distribution

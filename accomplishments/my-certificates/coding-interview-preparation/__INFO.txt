@@ -1,0 +1,5 @@
+title: Coding Interview Preparation
+verify: https://coursera.org/verify/KKH35AU6UAKY
+date: Feb 2024
+issued by: Meta
+tags: Data Structures, Computer Science, Algorithms, Communication, Pseudocode
