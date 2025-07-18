@@ -706,7 +706,7 @@ function loadCertificates() {
               </div>
 
               <p class="little-p certificate-text">
-                Issued by: <span>${cert.issuer}</span>
+                Issued by: <span class="issued-cert">${cert.issuer}</span>
               </p>
 
               <p class="little-p certificate-tags">
@@ -730,25 +730,6 @@ function loadCertificates() {
           `;
 
         container.appendChild(card);
-      });
-
-      // 3) Initialize Swiper on each carousel
-      document.querySelectorAll(".certificate-carousel").forEach((swiperEl) => {
-        const slides = swiperEl.querySelectorAll(".swiper-slide").length;
-        const pag = swiperEl.querySelector(".swiper-pagination");
-        if (slides <= 1) pag.style.display = "none";
-
-        new Swiper(swiperEl, {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: slides > 1,
-          watchOverflow: true,
-          observer: true,
-          observeParents: true,
-          pagination: { el: pag, clickable: slides > 1 },
-          touchReleaseOnEdges: true,
-          speed: 400,
-        });
       });
     })
     .catch((err) => console.error("Failed to load certificates:", err));
