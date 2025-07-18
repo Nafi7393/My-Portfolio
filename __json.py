@@ -189,7 +189,7 @@ def generate_certificates():
     # Re-assign offset/delay based on *sorted* order
     for i, entry in enumerate(entries):
         entry["offset"] = (i % 2 == 1)
-        entry["delay"] = f"{i * 0.2:.1f}"
+        entry["delay"] = f"{i * 0.05:.1f}"
 
     return entries
 

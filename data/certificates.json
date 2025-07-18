@@ -53,7 +53,7 @@
     "verifyLink": "https://www.coursera.org/verify/specialization/UOX0RUFWQ4JY",
     "offset": true,
     "duration": "0.5",
-    "delay": "0.2"
+    "delay": "0.1"
   },
   {
     "date": "Jul 2024",
@@ -74,7 +74,7 @@
     "verifyLink": "",
     "offset": false,
     "duration": "0.5",
-    "delay": "0.4"
+    "delay": "0.1"
   },
   {
     "date": "Jun 2024",
@@ -112,7 +112,7 @@
     "verifyLink": "https://coursera.org/verify/specialization/97QK9SYP3YRN",
     "offset": true,
     "duration": "0.5",
-    "delay": "0.6"
+    "delay": "0.2"
   },
   {
     "date": "Mar 2024",
@@ -134,7 +134,7 @@
     "verifyLink": "https://coursera.org/verify/SYT555ZLZUF9",
     "offset": false,
     "duration": "0.5",
-    "delay": "0.8"
+    "delay": "0.2"
   },
   {
     "date": "Feb 2024",
@@ -156,7 +156,7 @@
     "verifyLink": "https://coursera.org/verify/KKH35AU6UAKY",
     "offset": true,
     "duration": "0.5",
-    "delay": "1.0"
+    "delay": "0.2"
   },
   {
     "date": "Feb 2024",
@@ -178,7 +178,7 @@
     "verifyLink": "https://coursera.org/verify/UZHBU947FFA2",
     "offset": false,
     "duration": "0.5",
-    "delay": "1.2"
+    "delay": "0.3"
   },
   {
     "date": "Feb 2024",
@@ -200,7 +200,7 @@
     "verifyLink": "",
     "offset": true,
     "duration": "0.5",
-    "delay": "1.4"
+    "delay": "0.4"
   },
   {
     "date": "Jan 2024",
@@ -221,7 +221,7 @@
     "verifyLink": "https://coursera.org/verify/HCLVWHFWRLN4",
     "offset": false,
     "duration": "0.5",
-    "delay": "1.6"
+    "delay": "0.4"
   },
   {
     "date": "Oct 2023",
@@ -242,7 +242,7 @@
     "verifyLink": "https://www.coursera.org/verify/VCF85JBKM3HR",
     "offset": true,
     "duration": "0.5",
-    "delay": "1.8"
+    "delay": "0.5"
   },
   {
     "date": "Sep 2023",
@@ -263,7 +263,7 @@
     "verifyLink": "https://www.coursera.org/verify/8LEMRKW687DA",
     "offset": false,
     "duration": "0.5",
-    "delay": "2.0"
+    "delay": "0.5"
   },
   {
     "date": "Aug 2023",
@@ -285,6 +285,6 @@
     "verifyLink": "",
     "offset": true,
     "duration": "0.5",
-    "delay": "2.2"
+    "delay": "0.6"
   }
 ]

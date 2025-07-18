@@ -2704,3 +2704,50 @@ ol li {
   color: #ff0000;
   font-size: 16px;
 }
+
+/*---------------------------------------
+  Certificates grid: 2 columns, fixed gap
+----------------------------------------*/
+#certificates-container {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 0px; /* space between cards horizontally */
+  row-gap: 0px; /* space between cards vertically */
+  margin-top: 60px; /* match your existing spacer-90 above */
+  padding: 0 10px; /* optional: match your page padding */
+}
+
+/* remove any leftover Bootstrap float/margin rules */
+#certificates-container .timeline-item {
+  float: none !important;
+  margin: 0 !important;
+  width: auto !important;
+}
+
+#certificates-container .timeline-outer {
+  margin-bottom: 60px;
+}
+
+/*====================================================
+  Force equal header height so all carousels align
+====================================================*/
+
+/* 1) Ensure the header block is a fixed height */
+#certificates-container .timeline-outer .mini-text {
+  margin-bottom: 8px;
+  display: block;
+}
+#certificates-container .timeline-outer h5 {
+  /* adjust this to roughly the height of your two-line title */
+  min-height: 70px;
+  margin-bottom: 15px;
+}
+
+/* 2) (Optional) Tweak the carousel’s top margin for fine‑tuning */
+#certificates-container .timeline-outer .certificate-carousel {
+  margin-top: 0 !important;
+}
+
+#certificates-container > div:nth-child(2) .timeline-outer {
+  margin-top: 75px;
+}

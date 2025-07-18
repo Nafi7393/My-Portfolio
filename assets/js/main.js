@@ -673,73 +673,88 @@ function loadPortfolio() {
 function loadCertificates() {
   const container = document.getElementById("certificates-container");
   if (!container) return;
+  container.innerHTML = ""; // clear old cards
 
-  // 1) clear out any old content
-  container.innerHTML = "";
-
-  // 2) fetch JSON
   fetch("data/certificates.json")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((cert) => {
-        // build column wrapper
-        const col = document.createElement("div");
-        let cls = "col-xl-6 col-lg-6 col-md-6 col-sm-12 timeline-item clip-animation from-top";
-        if (cert.offset) cls += " offset-xl-6 offset-lg-6 offset-md-6";
-        col.className = cls;
-        col.dataset.duration = cert.duration;
-        col.dataset.delay = cert.delay;
+        // 1) Create a clean card wrapper
+        const card = document.createElement("div");
+        card.className = "timeline-item clip-animation from-top";
+        card.dataset.duration = cert.duration;
+        card.dataset.delay = cert.delay;
 
-        // build inner HTML
-        col.innerHTML = `
-              <div class="timeline-outer">
-                <span class="mini-text">${cert.date}</span>
-                <h5>${cert.title}</h5>
+        // 2) Fill it with your certificate HTML
+        card.innerHTML = `
+            <div class="timeline-outer">
+              <span class="mini-text">${cert.date}</span>
+              <h5>${cert.title}</h5>
 
-                <div class="swiper certificate-carousel clip-animation" data-delay="1">
-                  <div class="swiper-wrapper">
-                    ${cert.images
-                      .map(
-                        (img) => `
-                      <div class="swiper-slide">
-                        <img src="${img.src}" alt="${img.alt}" class="certificate-img"/>
-                      </div>`
-                      )
-                      .join("")}
-                  </div>
-                  <div class="swiper-pagination"></div>
+              <div class="swiper certificate-carousel" data-delay="${cert.delay}">
+                <div class="swiper-wrapper">
+                  ${cert.images
+                    .map(
+                      (img) => `
+                    <div class="swiper-slide">
+                      <img src="${img.src}" alt="${img.alt}" class="certificate-img"/>
+                    </div>`
+                    )
+                    .join("")}
                 </div>
-
-                <p class="little-p certificate-text">Issued by: <span>${cert.issuer}</span></p>
-                <p class="little-p certificate-tags">
-                  ${cert.tags.map((tag) => `<span>${tag}</span>`).join(" ")}
-                </p>
-
-                ${
-                  cert.verifyLink
-                    ? `
-                  <p class="little-p">
-                    <a href="${cert.verifyLink}"
-                       target="_blank"
-                       rel="noopener"
-                       class="verify-link">
-                      Verify Certificate
-                    </a>
-                  </p>`
-                    : ""
-                }
+                <div class="swiper-pagination"></div>
               </div>
-            `;
-        container.appendChild(col);
+
+              <p class="little-p certificate-text">
+                Issued by: <span>${cert.issuer}</span>
+              </p>
+
+              <p class="little-p certificate-tags">
+                ${cert.tags.map((tag) => `<span>${tag}</span>`).join(" ")}
+              </p>
+
+              ${
+                cert.verifyLink
+                  ? `
+                <p class="little-p">
+                  <a href="${cert.verifyLink}"
+                     target="_blank"
+                     rel="noopener"
+                     class="verify-link">
+                    Verify Certificate
+                  </a>
+                </p>`
+                  : ""
+              }
+            </div>
+          `;
+
+        container.appendChild(card);
+      });
+
+      // 3) Initialize Swiper on each carousel
+      document.querySelectorAll(".certificate-carousel").forEach((swiperEl) => {
+        const slides = swiperEl.querySelectorAll(".swiper-slide").length;
+        const pag = swiperEl.querySelector(".swiper-pagination");
+        if (slides <= 1) pag.style.display = "none";
+
+        new Swiper(swiperEl, {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: slides > 1,
+          watchOverflow: true,
+          observer: true,
+          observeParents: true,
+          pagination: { el: pag, clickable: slides > 1 },
+          touchReleaseOnEdges: true,
+          speed: 400,
+        });
       });
     })
     .catch((err) => console.error("Failed to load certificates:", err));
 }
 
-// initial load
 document.addEventListener("DOMContentLoaded", loadCertificates);
-
-// if using Barba.js for page transitions:
 if (window.barba) {
   barba.hooks.afterEnter(loadCertificates);
 }
