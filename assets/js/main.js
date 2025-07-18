@@ -304,10 +304,10 @@ function clientSlider() {
 
 // SMOOTH SCROLL JS
 
-var dampingValue = 0.01; // almost no lag
+var dampingValue = 0.2; // almost no lag
 
 if ($(window).width() <= 1024) {
-  dampingValue = 0.1; // still low on mobile
+  dampingValue = 0.09; // still low on mobile
 }
 
 var scrollbar = Scrollbar.init(document.getElementById("page-scroll"), {
