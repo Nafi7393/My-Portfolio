@@ -120,6 +120,9 @@ def generate_portfolio_items():
             "image": f"{base}/{folder}/cover.jpg"
         })
 
+        
+    category_order = {"graphics": 0, "programming": 1, "other": 2}
+    items.sort(key=lambda item: category_order.get(item["category"].lower(), 99))
     return items
 
 def generate_certificates():

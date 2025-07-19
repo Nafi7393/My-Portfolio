@@ -1,5 +1,26 @@
 [
   {
+    "title": "DESERT KUET",
+    "category": "graphics",
+    "tag": "Adobe FireFly, Photoshop, & Midjourney",
+    "link": "portfolio-works/desert-kuet/desert-kuet.html",
+    "image": "portfolio-works/desert-kuet/cover.jpg"
+  },
+  {
+    "title": "ICE KUET",
+    "category": "graphics",
+    "tag": "Photoshop, Midjourney & CapCut",
+    "link": "portfolio-works/ice-kuet/ice-kuet.html",
+    "image": "portfolio-works/ice-kuet/cover.jpg"
+  },
+  {
+    "title": "Seamless Pattern",
+    "category": "graphics",
+    "tag": "Photoshop & Midjourney",
+    "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html",
+    "image": "portfolio-works/Seamless-Pattern/cover.jpg"
+  },
+  {
     "title": "GIF QR Codes Generator",
     "category": "programming",
     "tag": "Python - Pillow, Steamlit & Requests",
@@ -54,13 +75,6 @@
     "tag": "Python - Pillow & Steamlit",
     "link": "portfolio-works/Random-Art-Generator/random-art-generator.html",
     "image": "portfolio-works/Random-Art-Generator/cover.jpg"
-  },
-  {
-    "title": "Seamless Pattern",
-    "category": "graphics",
-    "tag": "Photoshop & Midjourney",
-    "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html",
-    "image": "portfolio-works/Seamless-Pattern/cover.jpg"
   },
   {
     "title": "Super TIC-TAC-TOE",
