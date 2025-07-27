@@ -233,5 +233,82 @@
     <script src="assets/js/map.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+      function loadCertificates() {
+        const container = document.getElementById("certificates-container");
+        if (!container || container.dataset.loaded === "true") return;
+
+        fetch("data/certificates.json")
+          .then((res) => res.json())
+          .then((data) => {
+            data.forEach((cert) => {
+              const card = document.createElement("div");
+              card.className = "timeline-item clip-animation from-top";
+              card.dataset.duration = cert.duration;
+              card.dataset.delay = cert.delay;
+
+              card.innerHTML = `
+          <div class="timeline-outer">
+            <span class="mini-text">${cert.date}</span>
+            <h5>${cert.title}</h5>
+
+            <div class="swiper certificate-carousel" data-delay="${cert.delay}">
+              <div class="swiper-wrapper">
+                ${cert.images
+                  .map(
+                    (img) => `
+                  <div class="swiper-slide">
+                    <img src="${img.src}" alt="${img.alt}" class="certificate-img"/>
+                  </div>`
+                  )
+                  .join("")}
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <p class="little-p certificate-text">
+              Issued by: <span class="issued-cert">${cert.issuer}</span>
+            </p>
+
+            <p class="little-p certificate-tags">
+              ${cert.tags.map((tag) => `<span>${tag}</span>`).join(" ")}
+            </p>
+
+            ${
+              cert.verifyLink
+                ? `
+              <p class="little-p">
+                <a href="${cert.verifyLink}" target="_blank" rel="noopener" class="verify-link">
+                  Verify Certificate
+                </a>
+              </p>`
+                : ""
+            }
+          </div>
+        `;
+
+              container.appendChild(card);
+            });
+
+            /* -------------------------------------------------
+         AFTER cards + images exist:
+         1) wait for images,
+         2) (re)‑init Swiper where needed,
+         3) attach GSAP/ScrollMagic reveals.
+         ------------------------------------------------- */
+            imagesLoaded(container, () => {
+              if (typeof certificateSlider === "function") certificateSlider(); // ← NEW
+              if (typeof scrollAnimations === "function") scrollAnimations(); // ← NEW
+            });
+
+            container.dataset.loaded = "true"; // prevents double‑loading
+          })
+          .catch((err) => console.error("Failed to load certificates:", err));
+      }
+
+      /* run once on first load */
+      loadCertificates();
+    </script>
   </body>
 </html>

@@ -63,7 +63,7 @@
     <div class="page-cover">
       <div id="page-scroll">
         <div class="barba-wrapper" data-barba="wrapper">
-          <main data-barba="container">
+          <main data-barba="container" data-barba-namespace="blog">
             <div class="container">
               <div class="page-wrapper">
                 <header id="fixed">
@@ -123,13 +123,77 @@
     <div class="bg-image" style="background-image: url(assets/images/bg.jpg)"></div>
 
     <!-- Scripts -->
+
+    <!-- Core vendor scripts -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/plugins.js"></script>
-    <script
-      type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Isotope & imagesLoaded for grid layout -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+      let _blogIso = null;
+
+      function loadBlogs() {
+        const container = document.querySelector(".masonry.largrid");
+        if (!container || container.dataset.loaded === "true") return;
+
+        fetch("data/blog-info.json")
+          .then((r) => r.json())
+          .then((blogs) => {
+            blogs.forEach((blog, i) => {
+              const delay = 0.2 + i * 0.1;
+              const categories = blog.categories
+                .map((c) => `<a class="category" href="#" rel="category tag"><span>${c}</span></a>`)
+                .join("");
+
+              container.insertAdjacentHTML(
+                "beforeend",
+                `
+                <div class="col-xl-4 col-lg-6 col-md-6 grid-item classic-animation"
+                     data-delay="${delay}" data-duration="2">
+                  <div class="blog-grid">
+                    <a href="${blog.url}" class="blog-grid-image">
+                      <img src="${blog.image}" alt="">
+                    </a>
+                    <div class="bottom-content">
+                      <div class="categories">${categories}</div>
+                      <a href="${blog.url}">
+                        <h4 class="entry-title">${blog.title}</h4>
+                      </a>
+                      <div class="metas">
+                        <a class="author" href="#">${blog.author}</a>
+                        <div class="blog-date">${blog.date}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`
+              );
+            });
+
+            container.dataset.loaded = "true";
+
+            // Wait for images, then layout & animate
+            imagesLoaded(container, () => {
+              _blogIso = new Isotope(container, {
+                itemSelector: ".grid-item",
+                layoutMode: "fitRows",
+                transitionDuration: "0.5s",
+                fitRows: { gutter: 30 },
+              });
+
+              // Trigger GSAP/ScrollMagic reveals
+              scrollAnimations();
+            });
+          })
+          .catch(console.error);
+      }
+
+      // Fire it off immediately
+      loadBlogs();
+    </script>
   </body>
 </html>

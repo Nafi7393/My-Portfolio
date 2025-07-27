@@ -126,6 +126,7 @@ body #loader .loading .progress .bar-loading {
 }
 
 #page-scroll {
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
@@ -2782,4 +2783,105 @@ ol li {
   #certificates-container > div:nth-child(2) .timeline-outer {
     margin-top: 0px !important;
   }
+}
+
+/* 1) Turn the .row inside #gallery into a column container */
+.portfolio-showcase-img .row {
+  display: block; /* override Bootstrap flex/grid */
+  column-count: 3; /* how many “columns” you want */
+  column-gap: 5px; /* gutter between columns */
+  margin: 0; /* remove any Bootstrap row gutters */
+  padding: 0;
+}
+
+/* 2) Make each .scale-animation item flow into those columns */
+.portfolio-showcase-img .scale-animation {
+  display: inline-block; /* required for column flow */
+  width: 100%; /* full width of its column */
+  break-inside: avoid; /* prevent splitting */
+}
+
+/* 3) Ensure images fill their block and keep aspect */
+.portfolio-showcase-img .scale-animation img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Mobile override: under 768px ========== */
+@media (max-width: 1024px) {
+  /* 1) Turn the gallery wrapper back into normal flow */
+  .portfolio-showcase-img .row {
+    display: block !important; /* no flex, no columns */
+    column-count: initial !important;
+    column-gap: initial !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 2) Make each item full‑width */
+  .portfolio-showcase-img .scale-animation {
+    display: block !important; /* occupy its own “row” */
+    width: 100% !important;
+    margin: 0 0 15px; /* optional bottom gutter */
+    break-inside: avoid !important;
+  }
+
+  /* 3) Ensure its image fills that width */
+  .portfolio-showcase-img .scale-animation img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.hire-me-btn {
+  display: inline-block;
+  background-color: #d1ed5d;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+  width: 50%;
+  text-align: center;
+}
+.hire-me-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ── Hire‑Me Section Styling ───────────────────────────────────────── */
+.hire-me-section {
+  padding-top: 30px;
+  background-color: transparent; /* matches your dark panel */
+}
+
+.hire-me-section .hire-me-btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #d1ed5d; /* your neon‑green brand color */
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hire-me-section .hire-me-btn:hover {
+  transform: translateY(-2px);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== TEMPORARY OVERRIDES AFTER REMOVING SMOOTH‑SCROLL ==== */
+.page-cover,
+#page-scroll,
+.barba-wrapper {
+  /* Let the page grow and use the browser’s scrollbar */
+  height: auto !important;
+  min-height: 100vh; /* still fill at least one screen */
+  overflow: visible !important;
 }

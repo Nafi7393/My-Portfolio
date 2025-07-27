@@ -25,31 +25,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-      /* 1) Turn the .row inside #gallery into a column container */
-      #gallery .row {
-        display: block; /* override Bootstrap flex/grid */
-        column-count: 3; /* how many “columns” you want */
-        column-gap: 5px; /* gutter between columns */
-        margin: 0; /* remove any Bootstrap row gutters */
-        padding: 0;
-      }
-
-      /* 2) Make each .scale-animation item flow into those columns */
-      #gallery .scale-animation {
-        display: inline-block; /* required for column flow */
-        width: 100%; /* full width of its column */
-        break-inside: avoid; /* prevent splitting */
-      }
-
-      /* 3) Ensure images fill their block and keep aspect */
-      #gallery .scale-animation img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    </style>
   </head>
   <body class="scroll-animation-on">
     <!-- Preloader  -->
@@ -150,7 +125,7 @@
                 <div class="spacer-30"></div>
 
                 <!-- Gallery -->
-                <div class="lightbox-gallery" id="gallery">
+                <div class="lightbox-gallery portfolio-showcase-img" id="gallery">
                   <div class="row box-animation">
                     <div class="col-xl-4 col-lg-4 col-md-6 scale-animation">
                       <a href="imgs/1.png" class="image lightbox">

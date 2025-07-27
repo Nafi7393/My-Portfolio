@@ -146,5 +146,64 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      let _portfolioIso = null;
+
+      function loadPortfolio() {
+        const container = document.getElementById("portfolio-container");
+        if (!container || container.dataset.loaded === "true") return;
+
+        fetch("data/portfolio-works.json")
+          .then((r) => r.json())
+          .then((works) => {
+            works.forEach((w) => {
+              const div = document.createElement("div");
+              div.className = "col-xl-4 col-lg-6 col-md-6 grid-item " + w.category;
+              div.innerHTML = `
+          <a href="${w.link}" class="work-holder scale-animation">
+            <figure class="portfolio-item">
+              <img src="${w.image}" alt="">
+              <figcaption>
+                <div class="outer"><div class="inner">
+                  <span>${w.tag}</span>
+                  <h3 class="title">${w.title}</h3>
+                </div></div>
+              </figcaption>
+            </figure>
+          </a>`;
+              container.appendChild(div);
+            });
+
+            container.dataset.loaded = "true";
+
+            // wait for images then init Isotope
+            imagesLoaded(container, () => {
+              _portfolioIso = new Isotope(container, {
+                itemSelector: ".grid-item",
+                layoutMode: "masonry",
+                transitionDuration: "0.5s",
+              });
+
+              // filter buttons …
+              document.querySelectorAll(".portfolio_filter a").forEach((a) => {
+                a.addEventListener("click", (e) => {
+                  e.preventDefault();
+                  document
+                    .querySelectorAll(".portfolio_filter a")
+                    .forEach((x) => x.classList.remove("select-cat"));
+                  a.classList.add("select-cat");
+                  _portfolioIso.arrange({ filter: a.getAttribute("data-filter") });
+                });
+              });
+
+              /* >>> REGISTER ANIMATIONS FOR THE *NEW* CARDS <<< */
+              scrollAnimations(); // <— add this line
+            });
+          })
+          .catch(console.error);
+      }
+      loadPortfolio();
+      // End of portfolio loading script
+    </script>
   </body>
 </html>
