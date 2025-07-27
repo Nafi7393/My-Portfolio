@@ -12,10 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link
-      href="../../assets/images/favicon.png"
-      rel="shortcut icon"
-      type="image/x-icon" />
+    <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../../assets/css/main.css" />
@@ -28,22 +25,19 @@
       rel="stylesheet" />
 
     <!-- Font icons -->
-    <link
-      rel="stylesheet"
-      href="../../assets/icon-fonts/flat-icon/flaticon.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
 
     <style></style>
   </head>
   <body class="scroll-animation-on">
-    <!-- Preloader -->
+    <!-- Preloader  -->
     <div id="loader" class="preloader">
       <div class="loading">
         <div class="profile-image">
           <img src="../../assets/images/profile-loader.jpg" alt="" />
           <svg
+            style="position: absolute"
             width="100px"
             height="100px"
             viewBox="0 0 100 100"
@@ -79,9 +73,7 @@
                 <!-- Header -->
                 <header id="fixed">
                   <div class="hamburger hamburger--elastic">
-                    <span class="hamburger-box"
-                      ><span class="hamburger-inner"></span
-                    ></span>
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
                   </div>
                   <nav>
                     <ul>
@@ -100,10 +92,9 @@
                 <div class="spacer-30"></div>
                 <h1 class="big-title">Pinterest Post Maker</h1>
                 <p>
-                  This Python script generates Pinterest‐style post images by
-                  overlaying text on background images. It utilizes threading
-                  for concurrent image generation and supports customization of
-                  text styling.
+                  This Python script generates Pinterest‐style post images by overlaying text on
+                  background images. It utilizes threading for concurrent image generation and
+                  supports customization of text styling.
                 </p>
 
                 <!-- Explore the Project -->
@@ -130,10 +121,7 @@
                     <p><strong>PIL (Python Imaging Library)</strong></p>
                   </li>
                   <li>
-                    <p>
-                      <strong>`impact.ttf` font file</strong> (or specify your
-                      own font)
-                    </p>
+                    <p><strong>`impact.ttf` font file</strong> (or specify your own font)</p>
                   </li>
                   <li>
                     <p>
@@ -161,13 +149,13 @@ pip install pillow
                 <div class="spacer-30"></div>
                 <h2>Usage</h2>
                 <p>
-                  Modify <code>pin_text.csv</code> with your desired text lines.
-                  Then run: python main.py
+                  Modify <code>pin_text.csv</code> with your desired text lines. Then run: python
+                  main.py
                 </p>
                 <p>
                   You can adjust parameters in <code>main.py</code>, such as
-                  <code>max_limit</code> in the <code>fire_pins</code> function
-                  for batch generation.
+                  <code>max_limit</code> in the <code>fire_pins</code> function for batch
+                  generation.
                 </p>
 
                 <!-- Example Images -->
@@ -204,11 +192,9 @@ pip install pillow
                 <ul>
                   <li>
                     <p>
-                      <strong>Text Styling:</strong> Modify
-                      <code>text_color</code>, <code>font_path</code>,
-                      <code>base_font_size</code>, and
-                      <code>font_increase_size</code> in the
-                      <code>PinMaker</code> class.
+                      <strong>Text Styling:</strong> Modify <code>text_color</code>,
+                      <code>font_path</code>, <code>base_font_size</code>, and
+                      <code>font_increase_size</code> in the <code>PinMaker</code> class.
                     </p>
                   </li>
                   <li>
@@ -223,10 +209,9 @@ pip install pillow
                 <div class="spacer-30"></div>
                 <h2>Notes</h2>
                 <p>
-                  Ensure the CSV file (`pin_text.csv`) is correctly formatted
-                  with each line of text in the first column. The script uses
-                  threading for concurrent processing, enabling efficient batch
-                  creation.
+                  Ensure the CSV file (`pin_text.csv`) is correctly formatted with each line of text
+                  in the first column. The script uses threading for concurrent processing, enabling
+                  efficient batch creation.
                 </p>
 
                 <!-- Footer Navigation -->
@@ -250,16 +235,11 @@ pip install pillow
               <div class="container">
                 <div class="footer-inner">
                   <div class="footer-content">
-                    <p>
-                      © <span id="year"></span> Naich Naznafi. All rights
-                      reserved.
-                    </p>
+                    <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
                   </div>
                   <ul class="social">
                     <li>
-                      <a
-                        href="https://www.linkedin.com/in/naich-naznafi"
-                        target="_blank"
+                      <a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"
                         ><i class="fab fa-linkedin-in"></i
                       ></a>
                     </li>
@@ -276,9 +256,7 @@ pip install pillow
         </div>
       </div>
     </div>
-    <div
-      class="bg-image"
-      style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
+    <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
 
     <!-- Javascripts -->
     <script src="../../assets/js/jquery.js"></script>

@@ -12,10 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link
-      href="../../assets/images/favicon.png"
-      rel="shortcut icon"
-      type="image/x-icon" />
+    <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../../assets/css/main.css" />
@@ -28,22 +25,19 @@
       rel="stylesheet" />
 
     <!-- Font icons -->
-    <link
-      rel="stylesheet"
-      href="../../assets/icon-fonts/flat-icon/flaticon.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
 
     <style></style>
   </head>
   <body class="scroll-animation-on">
-    <!-- Preloader -->
+    <!-- Preloader  -->
     <div id="loader" class="preloader">
       <div class="loading">
         <div class="profile-image">
           <img src="../../assets/images/profile-loader.jpg" alt="" />
           <svg
+            style="position: absolute"
             width="100px"
             height="100px"
             viewBox="0 0 100 100"
@@ -79,9 +73,7 @@
                 <!-- Header -->
                 <header id="fixed">
                   <div class="hamburger hamburger--elastic">
-                    <span class="hamburger-box"
-                      ><span class="hamburger-inner"></span
-                    ></span>
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
                   </div>
                   <nav>
                     <ul>
@@ -100,11 +92,10 @@
                 <div class="spacer-30"></div>
                 <h1 class="big-title">File Management Tool</h1>
                 <p>
-                  The File Management Tool is a Python-based application built
-                  with PyQt5 for managing files within a specified directory.
-                  This tool allows users to search for files by extension, copy,
-                  move, delete files, and open files or their containing folders
-                  directly from the interface.
+                  The File Management Tool is a Python-based application built with PyQt5 for
+                  managing files within a specified directory. This tool allows users to search for
+                  files by extension, copy, move, delete files, and open files or their containing
+                  folders directly from the interface.
                 </p>
 
                 <!-- Explore the Project -->
@@ -125,51 +116,42 @@
                 <h2>Features</h2>
                 <ul>
                   <li>
+                    <p><strong>- Browse Folder:</strong> Select a directory to search for files.</p>
+                  </li>
+                  <li>
                     <p>
-                      <strong>- Browse Folder:</strong> Select a directory to
-                      search for files.
+                      <strong>- Find Files:</strong> Search for files with a specific extension
+                      within the selected directory.
+                    </p>
+                  </li>
+                  <li>
+                    <p><strong>- Select All Files:</strong> Quickly select all listed files.</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Copy Files:</strong> Copy selected files to a specified destination.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>- Find Files:</strong> Search for files with a
-                      specific extension within the selected directory.
+                      <strong>- Move Files:</strong> Move selected files to a specified destination.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>- Select All Files:</strong> Quickly select all
-                      listed files.
+                      <strong>- Delete Files:</strong> Delete selected files after confirmation.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>- Copy Files:</strong> Copy selected files to a
-                      specified destination.
+                      <strong>- Open File Location:</strong> Open the location of a selected file in
+                      the file explorer.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>- Move Files:</strong> Move selected files to a
-                      specified destination.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>- Delete Files:</strong> Delete selected files
-                      after confirmation.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>- Open File Location:</strong> Open the location
-                      of a selected file in the file explorer.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>- Open File:</strong> Open a selected file with
-                      the default application.
+                      <strong>- Open File:</strong> Open a selected file with the default
+                      application.
                     </p>
                   </li>
                 </ul>
@@ -179,38 +161,27 @@
                 <h2>How to Use</h2>
                 <ol style="color: #fff; line-height: 1.3em">
                   <li>
-                    Click the <strong>Browse</strong> button to select the
-                    directory you want to search in.
+                    Click the <strong>Browse</strong> button to select the directory you want to
+                    search in.
                   </li>
                   <li>
-                    Enter the file extension (e.g., <code>txt</code>,
-                    <code>zip</code>) in the input field.
+                    Enter the file extension (e.g., <code>txt</code>, <code>zip</code>) in the input
+                    field.
                   </li>
-                  <li>
-                    Click <strong>Find Files</strong> to list all matching
-                    files.
-                  </li>
-                  <li>
-                    Use <strong>Select All</strong> to highlight every file in
-                    the results.
-                  </li>
+                  <li>Click <strong>Find Files</strong> to list all matching files.</li>
+                  <li>Use <strong>Select All</strong> to highlight every file in the results.</li>
                   <li>
                     Click <strong>Copy Selected Files</strong> or
-                    <strong>Move Selected Files</strong> to choose a destination
-                    folder.
+                    <strong>Move Selected Files</strong> to choose a destination folder.
                   </li>
                   <li>
-                    Use <strong>Delete Selected Files</strong> to remove files,
-                    with a confirmation prompt.
+                    Use <strong>Delete Selected Files</strong> to remove files, with a confirmation
+                    prompt.
                   </li>
                   <li>
-                    Click <strong>Open File Location</strong> to view the file
-                    in Explorer/Finder.
+                    Click <strong>Open File Location</strong> to view the file in Explorer/Finder.
                   </li>
-                  <li>
-                    Click <strong>Open File</strong> to launch it in the default
-                    application.
-                  </li>
+                  <li>Click <strong>Open File</strong> to launch it in the default application.</li>
                 </ol>
 
                 <!-- Screenshots -->
@@ -223,15 +194,12 @@
                 <div class="lightbox-gallery">
                   <div class="row box-animation">
                     <div class="col-xl-12 clip-animation">
-                      <a
-                        href="imgs/base-gui.png"
-                        class="image lightbox"
-                        style="margin-bottom: 5px">
+                      <a href="imgs/base-gui.png" class="image lightbox" style="margin-bottom: 5px">
                         <img src="imgs/base-gui.png" alt="GUI Interface" />
                       </a>
                       <p class="caption">
-                        <em>GUI Interface:</em> Main window showing directory
-                        selection and file extension filter.
+                        <em>GUI Interface:</em> Main window showing directory selection and file
+                        extension filter.
                       </p>
                     </div>
                   </div>
@@ -251,8 +219,8 @@
                         <img src="imgs/on-action.png" alt="Search Results" />
                       </a>
                       <p class="caption">
-                        <em>Search Results:</em> Displaying list of `.zip` files
-                        found in the selected directory.
+                        <em>Search Results:</em> Displaying list of `.zip` files found in the
+                        selected directory.
                       </p>
                     </div>
                   </div>
@@ -266,38 +234,31 @@
                 <ul>
                   <li>
                     <p>
-                      <strong
-                        >find_files_with_extension(folder, extension):</strong
-                      >
+                      <strong>find_files_with_extension(folder, extension):</strong>
                       Recursively searches for files with a specified extension.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>delete_file(file_path):</strong> Deletes the given
-                      file if it exists.
+                      <strong>delete_file(file_path):</strong> Deletes the given file if it exists.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong
-                        >move_or_copy_file(file_path, destination,
-                        action='copy'):</strong
-                      >
+                      <strong>move_or_copy_file(file_path, destination, action='copy'):</strong>
                       Moves or copies a file to the destination folder.
                     </p>
                   </li>
                   <li>
                     <p>
                       <strong>open_file_or_folder(path, file=True):</strong>
-                      Opens a file or its containing folder with the default
-                      application.
+                      Opens a file or its containing folder with the default application.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>rename_file(file_path, new_name):</strong> Renames
-                      the specified file to a new name.
+                      <strong>rename_file(file_path, new_name):</strong> Renames the specified file
+                      to a new name.
                     </p>
                   </li>
                 </ul>
@@ -306,50 +267,42 @@
                 <ul>
                   <li>
                     <p>
-                      <strong>browse_folder():</strong> Opens a folder selection
-                      dialog and updates the path field.
+                      <strong>browse_folder():</strong> Opens a folder selection dialog and updates
+                      the path field.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>find_files():</strong> Searches for files and
-                      populates the list widget.
+                      <strong>find_files():</strong> Searches for files and populates the list
+                      widget.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>select_all_files():</strong> Selects every file in
-                      the results list.
+                      <strong>select_all_files():</strong> Selects every file in the results list.
+                    </p>
+                  </li>
+                  <li>
+                    <p><strong>copy_files():</strong> Copies selected files to a chosen folder.</p>
+                  </li>
+                  <li>
+                    <p><strong>move_files():</strong> Moves selected files to a chosen folder.</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>delete_files():</strong> Deletes selected files after user
+                      confirmation.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>copy_files():</strong> Copies selected files to a
-                      chosen folder.
+                      <strong>open_file_location():</strong> Opens the first selected file’s folder.
                     </p>
                   </li>
                   <li>
                     <p>
-                      <strong>move_files():</strong> Moves selected files to a
-                      chosen folder.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>delete_files():</strong> Deletes selected files
-                      after user confirmation.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>open_file_location():</strong> Opens the first
-                      selected file’s folder.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>open_file():</strong> Launches the selected file
-                      in its default application.
+                      <strong>open_file():</strong> Launches the selected file in its default
+                      application.
                     </p>
                   </li>
                 </ul>
@@ -376,16 +329,11 @@
               <div class="container">
                 <div class="footer-inner">
                   <div class="footer-content">
-                    <p>
-                      © <span id="year"></span> Naich Naznafi. All rights
-                      reserved.
-                    </p>
+                    <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
                   </div>
                   <ul class="social">
                     <li>
-                      <a
-                        href="https://www.linkedin.com/in/naich-naznafi"
-                        target="_blank"
+                      <a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"
                         ><i class="fab fa-linkedin-in"></i
                       ></a>
                     </li>
@@ -402,9 +350,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="bg-image"
-      style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
+    <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
 
     <!-- Javascripts -->
     <script src="../../assets/js/jquery.js"></script>
