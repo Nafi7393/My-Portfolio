@@ -4,7 +4,7 @@
     "title": "Qubit\u2019s Introduction to Quantum Computing",
     "images": [
       {
-        "src": "accomplishments/my-certificates/the-coding-school/main-certificate.jpg",
+        "src": "../accomplishments/my-certificates/the-coding-school/main-certificate.jpg",
         "alt": "Certificate: Qubit\u2019s Introduction to Quantum Computing"
       }
     ],
@@ -26,19 +26,19 @@
     "title": "AI Machine Learning - Specialization",
     "images": [
       {
-        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/main-certificate.jpg",
+        "src": "../accomplishments/my-certificates/machine-learning-specialization-by-stanford/main-certificate.jpg",
         "alt": "Certificate: AI Machine Learning - Specialization"
       },
       {
-        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/1 - Supervised Machine Learning Regression and Classification - YEOHH33WZ3SP.jpg",
+        "src": "../accomplishments/my-certificates/machine-learning-specialization-by-stanford/1 - Supervised Machine Learning Regression and Classification - YEOHH33WZ3SP.jpg",
         "alt": "Certificate: AI Machine Learning - Specialization"
       },
       {
-        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/2 - Advanced Learning Algorithms - LMW8FYCPXP3J.jpg",
+        "src": "../accomplishments/my-certificates/machine-learning-specialization-by-stanford/2 - Advanced Learning Algorithms - LMW8FYCPXP3J.jpg",
         "alt": "Certificate: AI Machine Learning - Specialization"
       },
       {
-        "src": "accomplishments/my-certificates/machine-learning-specialization-by-stanford/3 - Unsupervised Learning, Recommenders, Reinforcement Learning - 3TVRYPA4MK27.jpg",
+        "src": "../accomplishments/my-certificates/machine-learning-specialization-by-stanford/3 - Unsupervised Learning, Recommenders, Reinforcement Learning - 3TVRYPA4MK27.jpg",
         "alt": "Certificate: AI Machine Learning - Specialization"
       }
     ],
@@ -65,12 +65,7 @@
       }
     ],
     "issuer": "Encryptix",
-    "tags": [
-      "Python Programming",
-      "Internship",
-      "Software Development",
-      "Programming Concepts"
-    ],
+    "tags": ["Python Programming", "Internship", "Software Development", "Programming Concepts"],
     "verifyLink": "",
     "offset": false,
     "duration": "0.5",
@@ -102,13 +97,7 @@
       }
     ],
     "issuer": "University of Michigan",
-    "tags": [
-      "Django",
-      "Django REST Framework",
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
+    "tags": ["Django", "Django REST Framework", "HTML", "CSS", "JavaScript"],
     "verifyLink": "https://coursera.org/verify/specialization/97QK9SYP3YRN",
     "offset": true,
     "duration": "0.5",
@@ -124,13 +113,7 @@
       }
     ],
     "issuer": "IBM",
-    "tags": [
-      "Machine Learning",
-      "Regression",
-      "Classification",
-      "SciPy",
-      "Scikit-Learn"
-    ],
+    "tags": ["Machine Learning", "Regression", "Classification", "SciPy", "Scikit-Learn"],
     "verifyLink": "https://coursera.org/verify/SYT555ZLZUF9",
     "offset": false,
     "duration": "0.5",
@@ -146,13 +129,7 @@
       }
     ],
     "issuer": "Meta",
-    "tags": [
-      "Data Structures",
-      "Computer Science",
-      "Algorithms",
-      "Communication",
-      "Pseudocode"
-    ],
+    "tags": ["Data Structures", "Computer Science", "Algorithms", "Communication", "Pseudocode"],
     "verifyLink": "https://coursera.org/verify/KKH35AU6UAKY",
     "offset": true,
     "duration": "0.5",
@@ -168,13 +145,7 @@
       }
     ],
     "issuer": "IBM",
-    "tags": [
-      "Data Science",
-      "Data Analysis",
-      "Python Programming",
-      "NumPy",
-      "Pandas"
-    ],
+    "tags": ["Data Science", "Data Analysis", "Python Programming", "NumPy", "Pandas"],
     "verifyLink": "https://coursera.org/verify/UZHBU947FFA2",
     "offset": false,
     "duration": "0.5",
@@ -190,13 +161,7 @@
       }
     ],
     "issuer": "CADers",
-    "tags": [
-      "SOLIDWORKS",
-      "3D Modeling",
-      "CAD",
-      "Mechanical Design",
-      "Engineering Workshop"
-    ],
+    "tags": ["SOLIDWORKS", "3D Modeling", "CAD", "Mechanical Design", "Engineering Workshop"],
     "verifyLink": "",
     "offset": true,
     "duration": "0.5",
@@ -212,12 +177,7 @@
       }
     ],
     "issuer": "Georgia Institute of Technology",
-    "tags": [
-      "Communication",
-      "Email Strategy",
-      "Professional Writing",
-      "Business Communication"
-    ],
+    "tags": ["Communication", "Email Strategy", "Professional Writing", "Business Communication"],
     "verifyLink": "https://coursera.org/verify/HCLVWHFWRLN4",
     "offset": false,
     "duration": "0.5",
@@ -254,12 +214,7 @@
       }
     ],
     "issuer": "Vanderbilt University",
-    "tags": [
-      "Prompt Engineering",
-      "ChatGPT",
-      "Large Language Models (LLM)",
-      "AI"
-    ],
+    "tags": ["Prompt Engineering", "ChatGPT", "Large Language Models (LLM)", "AI"],
     "verifyLink": "https://www.coursera.org/verify/8LEMRKW687DA",
     "offset": false,
     "duration": "0.5",
@@ -275,13 +230,7 @@
       }
     ],
     "issuer": "CADers",
-    "tags": [
-      "AutoCAD",
-      "2D Drafting",
-      "CAD",
-      "Technical Drawing",
-      "Engineering Design"
-    ],
+    "tags": ["AutoCAD", "2D Drafting", "CAD", "Technical Drawing", "Engineering Design"],
     "verifyLink": "",
     "offset": true,
     "duration": "0.5",
