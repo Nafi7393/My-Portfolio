@@ -78,6 +78,27 @@
   },
   {
     "date": "Jun 2024",
+    "title": "ChatGPT for Beginners",
+    "images": [
+      {
+        "src": "../accomplishments/my-certificates/chatgpt-for-beginners/main-certificate.jpg",
+        "alt": "Certificate: ChatGPT for Beginners"
+      }
+    ],
+    "issuer": "Great Learning Academy",
+    "tags": [
+      "ChatGPT",
+      "AI Fundamentals",
+      "Prompt Engineering",
+      "Conversational AI"
+    ],
+    "verifyLink": "",
+    "offset": true,
+    "duration": "0.5",
+    "delay": "0.1"
+  },
+  {
+    "date": "Jun 2024",
     "title": "Django for Everybody - Specialization",
     "images": [
       {
@@ -110,7 +131,7 @@
       "JavaScript"
     ],
     "verifyLink": "https://coursera.org/verify/specialization/97QK9SYP3YRN",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -132,7 +153,7 @@
       "Scikit-Learn"
     ],
     "verifyLink": "https://coursera.org/verify/SYT555ZLZUF9",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -154,7 +175,7 @@
       "Pseudocode"
     ],
     "verifyLink": "https://coursera.org/verify/KKH35AU6UAKY",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -176,7 +197,7 @@
       "Pandas"
     ],
     "verifyLink": "https://coursera.org/verify/UZHBU947FFA2",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -198,9 +219,9 @@
       "Engineering Workshop"
     ],
     "verifyLink": "",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
-    "delay": "0.1"
+    "delay": "0.2"
   },
   {
     "date": "Jan 2024",
@@ -219,7 +240,7 @@
       "Business Communication"
     ],
     "verifyLink": "https://coursera.org/verify/HCLVWHFWRLN4",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.2"
   },
@@ -240,6 +261,28 @@
       "Object-Oriented Programming (OOP)"
     ],
     "verifyLink": "https://www.coursera.org/verify/VCF85JBKM3HR",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "0.2"
+  },
+  {
+    "date": "Sep 2023",
+    "title": "Introduction to Generative AI",
+    "images": [
+      {
+        "src": "../accomplishments/my-certificates/introduction-to-generative-ai/main-certificate.png",
+        "alt": "Certificate: Introduction to Generative AI"
+      }
+    ],
+    "issuer": "Google Cloud Skills Boost",
+    "tags": [
+      "Generative AI",
+      "AI Fundamentals",
+      "Machine Learning",
+      "Prompt Engineering",
+      "Google Cloud"
+    ],
+    "verifyLink": "https://www.cloudskillsboost.google/public_profiles/965f5e8f-c070-4c58-a568-906165c8e2ea/badges/4960457",
     "offset": true,
     "duration": "0.5",
     "delay": "0.2"
@@ -285,6 +328,6 @@
     "verifyLink": "",
     "offset": true,
     "duration": "0.5",
-    "delay": "0.2"
+    "delay": "0.3"
   }
 ]
