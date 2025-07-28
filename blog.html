@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
 
     <!-- Google Web fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,8 +26,8 @@
       rel="stylesheet" />
 
     <!-- Font icons -->
-    <link rel="stylesheet" href="assets/icon-fonts/flat-icon/flaticon.css" />
-    <link rel="stylesheet" href="assets/icon-fonts/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="../assets/icon-fonts/font-awesome/css/all.min.css" />
   </head>
 
   <body class="scroll-animation-on">
@@ -32,7 +35,7 @@
     <div id="loader" class="preloader">
       <div class="loading">
         <div class="profile-image">
-          <img src="assets/images/profile-loader.jpg" alt="" />
+          <img src="../assets/images/profile-loader.jpg" alt="" />
           <svg
             style="position: absolute"
             width="100px"
@@ -72,12 +75,12 @@
                   </div>
                   <nav>
                     <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="resume.html">Resume</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="achievements.html">Achievements</a></li>
-                      <li><a class="active" href="blog.html">Blog</a></li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/resume">Resume</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
+                      <li><a href="/achievements">Achievements</a></li>
+                      <li><a class="active" href="/blog">Blog</a></li>
+                      <li><a href="/contact">Contact</a></li>
                     </ul>
                   </nav>
                 </header>
@@ -120,15 +123,15 @@
       </div>
     </div>
 
-    <div class="bg-image" style="background-image: url(assets/images/bg.jpg)"></div>
+    <div class="bg-image" style="background-image: url(../assets/images/bg.jpg)"></div>
 
     <!-- Scripts -->
 
     <!-- Core vendor scripts -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/map.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/map.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Isotope & imagesLoaded for grid layout -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
@@ -141,7 +144,7 @@
         const container = document.querySelector(".masonry.largrid");
         if (!container || container.dataset.loaded === "true") return;
 
-        fetch("data/blog-info.json")
+        fetch("../data/blog-info.json")
           .then((r) => r.json())
           .then((blogs) => {
             blogs.forEach((blog, i) => {
