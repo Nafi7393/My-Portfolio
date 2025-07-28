@@ -1,0 +1,73 @@
+{
+  "work_experiences": [
+    {
+      "date": "Jul 2024 - Present",
+      "title": "Senior AI Artist & Graphic Designer - My Pet Canvas (Remote, Italy)",
+      "desc": "Leading AI art generation for pet-themed merchandise using Midjourney, Photoshop, and Illustrator."
+    },
+    {
+      "date": "Mar 2024 - Apr 2025",
+      "title": "Senior Graphic Designer - The Mural and Wall Printing Company LLC (Remote, USA)",
+      "desc": "Created high-quality, large-scale murals using Adobe Illustrator and Photoshop."
+    },
+    {
+      "date": "Jul 2022 - Present",
+      "title": "Custom Software Developer - Fiverr",
+      "desc": "As a freelance Custom Software Developer, I provide tailored desktop and software solutions to global clients via Fiverr."
+    },
+    {
+      "date": "Dec 2023 - Present",
+      "title": "AI Artist: Crafting with MidJourney & Photoshop - Upwork",
+      "desc": "As an AI-driven digital artist, I specialize in producing visually compelling and conceptually rich artwork using advanced generative tools such as MidJourney, ChatGPT, and Google Gemini."
+    }
+  ],
+  "education": [
+    {
+      "date": "2023 – 2027",
+      "title": "Khulna University of Engineering & Technology (KUET)",
+      "desc": "<strong>BSc in Mechanical Engineering</strong> - Alongside academics, I actively explore interdisciplinary applications of AI in engineering and automation."
+    },
+    {
+      "date": "2019 – 2021",
+      "title": "Govt. Science College, Dhaka",
+      "desc": "<strong>Higher Secondary Certificate (HSC)</strong> - Graduated with strong academic standing in Physics, Chemistry, Mathematics, and Biology. Developed foundational knowledge and critical thinking skills that laid the groundwork for my technical journey."
+    },
+    {
+      "date": "2009 – 2019",
+      "title": "Dhanmondi Govt. Boys' High School",
+      "desc": "<strong>Secondary School Certificate (SSC)</strong> - Completed 10 years of foundational education with focus on core subjects including General Science and ICT. Participated in science fairs and extracurricular projects that nurtured early interest in technology."
+    }
+  ],
+  "extra": [
+    {
+      "date": "Feb 2025 - Present",
+      "title": "Cultural Secretary - Mechanical Engineering Association, KUET",
+      "desc": "Responsible for promoting campus events by creating digital and print materials such as posters, banners, and event visuals. Fostered student engagement through creative competitions, informal gatherings, and community-building initiatives within the department."
+    },
+    {
+      "date": "Feb 2024 - Present",
+      "title": "Assistant General Secretary - KUET Business and Entrepreneurship Club (KBEC)",
+      "desc": "Oversee club-wide operations and strategic planning while coordinating between creative, marketing, and event teams. Spearhead the execution of key initiatives, ensure timely communication across departments, and contribute to elevating the club’s impact through strong organizational leadership and visual branding oversight."
+    },
+    {
+      "date": "Apr 2024 - Present",
+      "title": "Team Kilo Flight",
+      "desc": "Engaged in interdisciplinary workshops and hands-on projects focused on mechanical and aerospace systems. Developed core technical skills through team-based problem-solving, design challenges, and practical engineering tasks."
+    },
+    {
+      "date": "Jan 2025 - Present",
+      "title": "Interactive Cares - Part-time",
+      "desc": "Represent the platform among university peers to promote learning and career development opportunities. Contribute to brand visibility through digital outreach, campus engagements, and peer-to-peer communication strategies that connect students with relevant upskilling programs."
+    },
+    {
+      "date": "Jul 2024 - Feb 2025",
+      "title": "Trainee Member of Autonomous sub-team - Team Durbar",
+      "desc": "Worked on developing and testing autonomous robotic systems with a focus on Python and sensor integration. Contributed to software logic, algorithm refinement, and initial simulations for navigation and obstacle detection using tools like NumPy and custom Python scripts."
+    },
+    {
+      "date": "Jun 2024 - Jul 2024",
+      "title": "Encryptyx: Internship - Delhi, India (Remote)",
+      "desc": "Completed a 4-week intensive internship focused on Python development. Built and deployed mini-projects such as a To-Do List App, Calculator, Password Generator, and more. Gained hands-on experience with fundamental programming concepts, problem-solving techniques, and team collaboration in a virtual environment."
+    }
+  ]
+}
