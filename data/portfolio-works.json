@@ -3,91 +3,91 @@
     "title": "DESERT KUET",
     "category": "graphics",
     "tag": "Adobe FireFly, Photoshop, & Midjourney",
-    "link": "portfolio-works/desert-kuet/desert-kuet.html",
-    "image": "portfolio-works/desert-kuet/cover.jpg"
+    "link": "../portfolio-works/desert-kuet/desert-kuet",
+    "image": "../portfolio-works/desert-kuet/cover.jpg"
   },
   {
     "title": "ICE KUET",
     "category": "graphics",
     "tag": "Photoshop, Midjourney & CapCut",
-    "link": "portfolio-works/ice-kuet/ice-kuet.html",
-    "image": "portfolio-works/ice-kuet/cover.jpg"
+    "link": "../portfolio-works/ice-kuet/ice-kuet",
+    "image": "../portfolio-works/ice-kuet/cover.jpg"
   },
   {
     "title": "Seamless Pattern",
     "category": "graphics",
     "tag": "Photoshop & Midjourney",
-    "link": "portfolio-works/Seamless-Pattern/seamless-pattern.html",
-    "image": "portfolio-works/Seamless-Pattern/cover.jpg"
+    "link": "../portfolio-works/Seamless-Pattern/seamless-pattern",
+    "image": "../portfolio-works/Seamless-Pattern/cover.jpg"
   },
   {
     "title": "GIF QR Codes Generator",
     "category": "programming",
     "tag": "Python - Pillow, Steamlit & Requests",
-    "link": "portfolio-works/Awesome-QR-Codes-Generator/gif-qr-codes-generator.html",
-    "image": "portfolio-works/Awesome-QR-Codes-Generator/cover.jpg"
+    "link": "../portfolio-works/Awesome-QR-Codes-Generator/gif-qr-codes-generator",
+    "image": "../portfolio-works/Awesome-QR-Codes-Generator/cover.jpg"
   },
   {
     "title": "Class Attendance Calculator",
     "category": "programming",
     "tag": "Python - Flask & PostgreSQL",
-    "link": "portfolio-works/Class-Attendance-Calculator/class-attendance-calculator.html",
-    "image": "portfolio-works/Class-Attendance-Calculator/cover.jpg"
+    "link": "../portfolio-works/Class-Attendance-Calculator/class-attendance-calculator",
+    "image": "../portfolio-works/Class-Attendance-Calculator/cover.jpg"
   },
   {
     "title": "Expenses Tracker",
     "category": "programming",
     "tag": "Python - Flask & PostgreSQL",
-    "link": "portfolio-works/Expenses-Tracker/expenses-tracker.html",
-    "image": "portfolio-works/Expenses-Tracker/cover.jpg"
+    "link": "../portfolio-works/Expenses-Tracker/expenses-tracker",
+    "image": "../portfolio-works/Expenses-Tracker/cover.jpg"
   },
   {
     "title": "File Management Tool",
     "category": "programming",
     "tag": "Python - OS & PyQt5",
-    "link": "portfolio-works/File-Management-Tool/file-management-tool.html",
-    "image": "portfolio-works/File-Management-Tool/cover.jpg"
+    "link": "../portfolio-works/File-Management-Tool/file-management-tool",
+    "image": "../portfolio-works/File-Management-Tool/cover.jpg"
   },
   {
     "title": "Keyword Processor",
     "category": "programming",
     "tag": "Python - Streamlit, Requests & Matplotlib",
-    "link": "portfolio-works/Keyword-Processor/keyword-processor.html",
-    "image": "portfolio-works/Keyword-Processor/cover.jpg"
+    "link": "../portfolio-works/Keyword-Processor/keyword-processor",
+    "image": "../portfolio-works/Keyword-Processor/cover.jpg"
   },
   {
     "title": "Midjourney Prompt Builder",
     "category": "programming",
     "tag": "Python - Gemini, API & Streamlit",
-    "link": "portfolio-works/Midjourney-Prompt-Builder/midjourney-prompt-builder.html",
-    "image": "portfolio-works/Midjourney-Prompt-Builder/cover.jpg"
+    "link": "../portfolio-works/Midjourney-Prompt-Builder/midjourney-prompt-builder",
+    "image": "../portfolio-works/Midjourney-Prompt-Builder/cover.jpg"
   },
   {
     "title": "Pinterest Post Maker",
     "category": "programming",
     "tag": "Python - Pillow",
-    "link": "portfolio-works/Pinterest-Post-Maker/pinterest-post-maker.html",
-    "image": "portfolio-works/Pinterest-Post-Maker/cover.jpg"
+    "link": "../portfolio-works/Pinterest-Post-Maker/pinterest-post-maker",
+    "image": "../portfolio-works/Pinterest-Post-Maker/cover.jpg"
   },
   {
     "title": "Random Art Generator",
     "category": "programming",
     "tag": "Python - Pillow & Steamlit",
-    "link": "portfolio-works/Random-Art-Generator/random-art-generator.html",
-    "image": "portfolio-works/Random-Art-Generator/cover.jpg"
+    "link": "../portfolio-works/Random-Art-Generator/random-art-generator",
+    "image": "../portfolio-works/Random-Art-Generator/cover.jpg"
   },
   {
     "title": "Super TIC-TAC-TOE",
     "category": "programming",
     "tag": "Python - Pygame, AI Player",
-    "link": "portfolio-works/Super-TICTACTOE/super-tictactoe.html",
-    "image": "portfolio-works/Super-TICTACTOE/cover.jpg"
+    "link": "../portfolio-works/Super-TICTACTOE/super-tictactoe",
+    "image": "../portfolio-works/Super-TICTACTOE/cover.jpg"
   },
   {
     "title": "Vector to Colorless",
     "category": "programming",
     "tag": "Python - Numpy & OpenCV",
-    "link": "portfolio-works/Vector-to-Colorless/vector-to-colorless.html",
-    "image": "portfolio-works/Vector-to-Colorless/cover.jpg"
+    "link": "../portfolio-works/Vector-to-Colorless/vector-to-colorless",
+    "image": "../portfolio-works/Vector-to-Colorless/cover.jpg"
   }
 ]

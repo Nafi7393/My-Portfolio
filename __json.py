@@ -64,14 +64,16 @@ def generate_blog_info():
         html_files = [f for f in os.listdir(folder_path) if f.lower().endswith(".html")]
         if len(html_files) != 1:
             raise RuntimeError(f"Expected one HTML file in {folder_path}, found: {html_files}")
+        
+        url_name = os.path.splitext(html_files[0])[0]
 
         entries.append({
             "title": metadata["title"],
             "date": metadata["date"],
             "author": metadata["author"],
             "categories": metadata["categories"],
-            "url": f"{base}/{folder}/{html_files[0]}",
-            "image": f"{base}/{folder}/cover.jpg"
+            "url": f"../{base}/{folder}/{url_name}",
+            "image": f"../{base}/{folder}/cover.jpg"
         })
 
     # Sort by parsed date, most recent first
@@ -111,13 +113,15 @@ def generate_portfolio_items():
         image_path = os.path.join(folder_path, "cover.jpg")
         if not os.path.isfile(image_path):
             raise RuntimeError(f"No cover.jpg found in {folder_path}")
+        
+        url_name = os.path.splitext(html_files[0])[0]
 
         items.append({
             "title": metadata["title"],
             "category": metadata["category"],
             "tag": metadata["tag"],
-            "link": f"{base}/{folder}/{html_files[0]}",
-            "image": f"{base}/{folder}/cover.jpg"
+            "link": f"../{base}/{folder}/{url_name}",
+            "image": f"../{base}/{folder}/cover.jpg"
         })
 
         
@@ -171,7 +175,7 @@ def generate_certificates():
         images = []
         for fn in main_imgs + other_imgs:
             images.append({
-                "src": f"{base}/{folder}/{fn}".replace("\\", "/"),
+                "src": f"../{base}/{folder}/{fn}".replace("\\", "/"),
                 "alt": f"Certificate: {metadata['title']}"
             })
 
@@ -194,71 +198,6 @@ def generate_certificates():
         entry["offset"] = (i % 2 == 1)
         entry["delay"] = f"{i * 0.02:.1f}"
 
-    return entries
-
-    base = "accomplishments/my-certificates"
-    entries = []
-
-    for idx, folder in enumerate(sorted(os.listdir(base))):
-        folder_path = os.path.join(base, folder)
-        if not os.path.isdir(folder_path):
-            continue
-
-        metadata = {
-            "date": "",
-            "title": folder,
-            "issuer": "",
-            "tags": [],
-            "verifyLink": ""
-        }
-
-        info_path = os.path.join(folder_path, "__INFO.txt")
-        if os.path.isfile(info_path):
-            with open(info_path, encoding="utf-8") as f:
-                for line in f:
-                    if ":" not in line:
-                        continue
-                    key, val = line.split(":", 1)
-                    k = key.strip().lower()
-                    v = val.strip()
-                    if not v:
-                        continue
-                    if k == "date":
-                        metadata["date"] = v
-                    elif k == "title":
-                        metadata["title"] = v
-                    elif k in ("issuer", "issued by"):
-                        metadata["issuer"] = v
-                    elif k == "verify":
-                        metadata["verifyLink"] = v
-                    elif k == "tags":
-                        metadata["tags"] = [t.strip() for t in v.split(",") if t.strip()]
-
-        files = sorted(os.listdir(folder_path))
-        main_imgs = [f for f in files if f.lower().startswith("main-certificate") and f.lower().endswith((".jpg", ".jpeg", ".png", ".gif"))]
-        other_imgs = [f for f in files if f.lower().endswith((".jpg", ".jpeg", ".png", ".gif")) and f not in main_imgs]
-
-        images = []
-        for fn in main_imgs + other_imgs:
-            images.append({
-                "src": f"{base}/{folder}/{fn}".replace("\\", "/"),
-                "alt": f"Certificate: {metadata['title']}"
-            })
-
-        entries.append({
-            "date": metadata["date"],
-            "title": metadata["title"],
-            "images": images,
-            "issuer": metadata["issuer"],
-            "tags": metadata["tags"],
-            "verifyLink": metadata["verifyLink"],
-            "offset": bool(idx % 2),
-            "duration": "1.5",
-            "delay": f"{idx * 0.4:.1f}"
-        })
-
-    # Sort by parsed date, most recent first
-    entries.sort(key=lambda e: _parse_date(e["date"]), reverse=True)
     return entries
 
 def main():
