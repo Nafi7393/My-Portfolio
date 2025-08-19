@@ -183,15 +183,15 @@
           }
           if (!window.Swiper) return;
           root.querySelectorAll(".work-carousel").forEach((el) => {
-            if (el.__inited) return;
-            el.__inited = true;
-            new Swiper(el, {
-              loop: false,
+            const $wrap = $(this);
+            const number = $wrap.find(".swiper-slide").length;
+            $wrap.find(".swiper-pagination").toggle(number > 1);
+
+            new Swiper(this, {
+              loop: number > 1,
               slidesPerView: 1,
               spaceBetween: 16,
-              pagination: { el: el.querySelector(".swiper-pagination"), clickable: true },
-              watchOverflow: true,
-              a11y: true,
+              pagination: { el: $wrap.find(".swiper-pagination")[0], clickable: true },
             });
           });
         }
