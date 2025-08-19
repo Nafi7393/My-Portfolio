@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Naich Naznafi - Resume</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Naich Naznafi - Resume" />
+    <meta
+      name="keywords"
+      content="personal, portfolio, blog, resume, portfolio template, personal template, personal blog, personal portfolio, personal resume, naich naznafi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="../assets/icon-fonts/font-awesome/css/all.min.css" />
+  </head>
+  <body class="scroll-animation-on">
+    <!-- Preloader -->
+    <div id="loader" class="preloader">
+      <div class="loading">
+        <div class="profile-image">
+          <img src="../assets/images/profile-loader.jpg" alt="" />
+          <svg
+            style="position: absolute"
+            width="100px"
+            height="100px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <circle
+              class="js-circle circle"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+            <circle
+              class="js-circle circletwo"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-cover">
+      <div id="page-scroll">
+        <div class="barba-wrapper" data-barba="wrapper">
+          <main data-barba="container">
+            <div class="container">
+              <div class="page-wrapper">
+                <!-- Header -->
+                <header id="fixed">
+                  <div class="hamburger hamburger--elastic">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="/">Home</a></li>
+                      <li><a class="active" href="/resume">Resume</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
+                      <li><a href="/achievements">Achievements</a></li>
+                      <li><a href="/blog">Blog</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                    </ul>
+                  </nav>
+                </header>
+
+                <!-- Page Title -->
+                <h5 class="underline-title">MY RESUME</h5>
+                <!-- Sections injected below -->
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+              <div class="container">
+                <div class="footer-inner">
+                  <div class="footer-content">
+                    <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+                  </div>
+                  <ul class="social">
+                    <li>
+                      <a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="mailto:contact.nafi779@gmail.com" target="_blank"
+                        ><i class="fas fa-envelope"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-image" style="background-image: url(../assets/images/bg.jpg)"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+    <script src="../assets/js/map.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Resume Loader -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const wrapper = document.querySelector(".page-wrapper");
+        if (!wrapper || wrapper.dataset.loaded === "true") return;
+
+        const JSON_URL = "../data/resume-data.json";
+
+        const escapeHTML = (s) =>
+          String(s == null ? "" : s)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+
+        function validImages(arr) {
+          if (!Array.isArray(arr)) return [];
+          return arr.filter((im) => im && typeof im.src === "string" && im.src.trim().length > 0);
+        }
+
+        // Reuse achievements.html style for multi-image slides
+        function buildImageBlock(images, title) {
+          if (!images.length) return "";
+
+          // Multiple images → same structure as achievements.html
+          const slides = images
+            .map((im, i) => {
+              const alt = escapeHTML(im.alt || `${title || "item"} — image ${i + 1}`);
+              const src = escapeHTML(im.src);
+              return `
+                <div class="swiper-slide">
+                  <img src="${src}" alt="${alt}" class="resume-img" loading="lazy" />
+                </div>
+              `;
+            })
+            .join("");
+
+          return `
+            <div class="spacer-30"></div>
+            <div class="swiper work-carousel clip-animation" data-delay="1">
+              <div class="swiper-wrapper">
+                ${slides}
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          `;
+        }
+
+        function initResumeCarousels(root) {
+          if (typeof window.workSlider === "function") {
+            try {
+              window.workSlider();
+            } catch (_) {}
+            return;
+          }
+          if (!window.Swiper) return;
+          root.querySelectorAll(".work-carousel").forEach((el) => {
+            if (el.__inited) return;
+            el.__inited = true;
+            new Swiper(el, {
+              loop: false,
+              slidesPerView: 1,
+              spaceBetween: 16,
+              pagination: { el: el.querySelector(".swiper-pagination"), clickable: true },
+              watchOverflow: true,
+              a11y: true,
+            });
+          });
+        }
+
+        function renderSection(wrapper, title, items) {
+          if (!Array.isArray(items) || items.length === 0) return;
+
+          const spacer = document.createElement("div");
+          spacer.className = "spacer-90";
+          wrapper.appendChild(spacer);
+
+          const caption = document.createElement("div");
+          caption.className = "timeline-caption-outer";
+          caption.innerHTML = `<div class="timeline-caption"><span>${escapeHTML(
+            title
+          )}</span></div>`;
+          wrapper.appendChild(caption);
+
+          const timeline = document.createElement("div");
+          timeline.className = "timeline row";
+
+          items.forEach((item, index) => {
+            const offset = index % 2 === 1 ? "offset-xl-6 offset-lg-6 offset-md-6" : "";
+            const col = document.createElement("div");
+            col.className = `col-xl-6 col-lg-6 col-md-6 col-sm-12 timeline-item clip-animation from-top ${offset}`;
+            col.setAttribute("data-duration", "1.5");
+
+            const date = item.date || "";
+            const ttl = item.title || "";
+            const descHTML = item.desc || "";
+            const imgs = validImages(item.images);
+            const gallery = buildImageBlock(imgs, ttl);
+
+            col.innerHTML = `
+              <div class="timeline-outer">
+                <span class="mini-text">${escapeHTML(date)}</span>
+                <h5>${escapeHTML(ttl)}</h5>
+                <p class="little-p">${descHTML}</p>
+                ${gallery}
+              </div>
+            `;
+
+            timeline.appendChild(col);
+          });
+
+          wrapper.appendChild(timeline);
+        }
+
+        function hydrateInteractions(root) {
+          if (typeof window.imagesLoaded === "function") {
+            imagesLoaded(root, () => {
+              initResumeCarousels(root);
+              if (typeof window.scrollAnimations === "function") {
+                try {
+                  window.scrollAnimations();
+                } catch (_) {}
+              }
+            });
+          } else {
+            initResumeCarousels(root);
+            if (typeof window.scrollAnimations === "function") {
+              try {
+                window.scrollAnimations();
+              } catch (_) {}
+            }
+          }
+        }
+
+        fetch(JSON_URL)
+          .then((res) => res.json())
+          .then((data) => {
+            const sections = [
+              { title: "Works Experiences", items: data.work_experiences },
+              { title: "Education", items: data.education },
+              { title: "Extra-Curricular Activities & Experience", items: data.extra },
+            ];
+            sections.forEach((s) => renderSection(wrapper, s.title, s.items));
+
+            wrapper.dataset.loaded = "true";
+            hydrateInteractions(wrapper);
+          })
+          .catch((err) => {
+            console.error("❌ Failed to load resume data:", err);
+            const p = document.createElement("p");
+            p.textContent = "Failed to load resume information. Please try again later.";
+            p.style.color = "red";
+            wrapper.appendChild(p);
+          });
+      });
+    </script>
+  </body>
+</html>

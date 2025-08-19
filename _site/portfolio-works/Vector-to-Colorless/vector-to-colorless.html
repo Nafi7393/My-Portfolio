@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Vector to Colorless</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Vector-to-Colorless – Python script to convert vector images into clean, grayscale versions with enhanced edges." />
+    <meta
+      name="keywords"
+      content="Vector-to-Colorless, Python, OpenCV, grayscale, edge enhancement" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+
+    <!-- Google Web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
+
+    <style></style>
+  </head>
+  <body class="scroll-animation-on">
+    <!-- Preloader  -->
+    <div id="loader" class="preloader">
+      <div class="loading">
+        <div class="profile-image">
+          <img src="../../assets/images/profile-loader.jpg" alt="" />
+          <svg
+            style="position: absolute"
+            width="100px"
+            height="100px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <circle
+              class="js-circle circle"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+            <circle
+              class="js-circle circletwo"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="page-cover">
+      <div id="page-scroll">
+        <div class="barba-wrapper" data-barba="wrapper">
+          <main data-barba="container">
+            <div class="container">
+              <div class="page-wrapper">
+                <!-- Header -->
+                <header id="fixed">
+                  <div class="hamburger hamburger--elastic">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/resume">Resume</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
+                      <li><a href="/achievements">Achievements</a></li>
+                      <li><a href="/blog">Blog</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                    </ul>
+                  </nav>
+                </header>
+
+                <div class="spacer-30"></div>
+                <h1 class="big-title">Vector-to-Colorless</h1>
+                <p>
+                  Vector-to-Colorless is a Python script designed to convert vector images into
+                  colorless, grayscale versions with enhanced edges. It leverages OpenCV for image
+                  processing, handling alpha channels and producing clean, uniform results suitable
+                  for various applications.
+                </p>
+
+                <!-- Explore the Project -->
+                <div class="spacer-30"></div>
+                <h2>Explore the Project</h2>
+                <p>
+                  Source code available on GitHub:
+                  <a
+                    href="https://github.com/Nafi7393/Vector-to-Colorless"
+                    target="_blank"
+                    style="color: #e6ff00; text-decoration: underline">
+                    Source on GitHub
+                  </a>
+                </p>
+
+                <!-- Features -->
+                <div class="spacer-30"></div>
+                <h2>Features</h2>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>- Grayscale Conversion:</strong> Converts vector images to clean,
+                      uniform grayscale.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Edge Enhancement:</strong> Detects and sharpens edges for crisp
+                      output.
+                    </p>
+                  </li>
+                  <li>
+                    <p><strong>- Alpha Channel Support:</strong> Handles transparency correctly.</p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Batch Processing:</strong> Processes all images in the
+                      <code>input</code> folder.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- OpenCV &amp; NumPy:</strong> Leverages powerful libraries for image
+                      manipulation.
+                    </p>
+                  </li>
+                </ul>
+
+                <!-- How to Use -->
+                <div class="spacer-30"></div>
+                <h2>How to Use</h2>
+                <ol style="color: #fff; line-height: 1.3em">
+                  <li>Place your vector images in the <code>input</code> folder.</li>
+                  <li>Run the script:<br /><code>python main.py</code></li>
+                  <li>
+                    Processed images will be saved in the
+                    <code>output</code> folder.
+                  </li>
+                </ol>
+
+                <!-- Examples -->
+                <div class="spacer-30"></div>
+                <h2>Examples</h2>
+                <div class="spacer-10"></div>
+
+                <!-- Example 1 -->
+                <h5>Example 1</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-6 clip-animation">
+                      <a href="imgs/input/2.webp" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/input/2.webp" alt="Example 1 Original" />
+                      </a>
+                      <p class="caption"><em>Original Image:</em> Input vector file.</p>
+                    </div>
+                    <div class="col-xl-6 clip-animation">
+                      <a href="imgs/output/2.png" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/output/2.png" alt="Example 1 Colorless" />
+                      </a>
+                      <p class="caption">
+                        <em>Colorless Result:</em> Grayscale output with enhanced edges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+                <!-- Example 2 -->
+                <h5>Example 2</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-6 clip-animation">
+                      <a href="imgs/input/3.jpg" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/input/3.jpg" alt="Example 2 Original" />
+                      </a>
+                      <p class="caption"><em>Original Image:</em> Input vector file.</p>
+                    </div>
+                    <div class="col-xl-6 clip-animation">
+                      <a href="imgs/output/3.png" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/output/3.png" alt="Example 2 Colorless" />
+                      </a>
+                      <p class="caption">
+                        <em>Colorless Result:</em> Grayscale output with enhanced edges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+                <!-- Example 3 -->
+                <h5>Example 3</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-6 clip-animation">
+                      <a href="imgs/input/1.png" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/input/1.png" alt="Example 3 Original" />
+                      </a>
+                      <p class="caption"><em>Original Image:</em> Input vector file.</p>
+                    </div>
+                    <div class="col-xl-6 clip-animation">
+                      <a href="imgs/output/1.png" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/output/1.png" alt="Example 3 Colorless" />
+                      </a>
+                      <p class="caption">
+                        <em>Colorless Result:</em> Grayscale output with enhanced edges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer Navigation -->
+                <div class="work-navigation spacer-60">
+                  <a class="case" href="/portfolio">
+                    <svg
+                      height="16"
+                      viewBox="0 0 40 40"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect height="14" width="14" x="1" y="25" />
+                      <rect height="14" width="14" x="25" y="25" />
+                      <rect height="14" width="14" x="1" y="1" />
+                      <rect height="14" width="14" x="25" y="1" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <div class="container">
+                <div class="footer-inner">
+                  <div class="footer-content">
+                    <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+                  </div>
+                  <ul class="social">
+                    <li>
+                      <a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="mailto:contact.nafi779@gmail.com" target="_blank"
+                        ><i class="fas fa-envelope"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
+
+    <!-- Javascripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+    <script src="../../assets/js/map.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

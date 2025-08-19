@@ -87,8 +87,7 @@
 
                 <!-- Page Title -->
                 <h5 class="underline-title">MY RESUME</h5>
-
-                <!-- Timelines will be injected here dynamically -->
+                <!-- Sections injected below -->
               </div>
             </div>
 
@@ -129,68 +128,160 @@
     <script src="../assets/js/main.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
-    <!-- Resume Loader Script -->
+    <!-- Resume Loader -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const wrapper = document.querySelector(".page-wrapper");
-
-        // Avoid reloading
         if (!wrapper || wrapper.dataset.loaded === "true") return;
 
-        fetch("../data/resume-data.json")
+        const JSON_URL = "../data/resume-data.json";
+
+        const escapeHTML = (s) =>
+          String(s == null ? "" : s)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+
+        function validImages(arr) {
+          if (!Array.isArray(arr)) return [];
+          return arr.filter((im) => im && typeof im.src === "string" && im.src.trim().length > 0);
+        }
+
+        // Reuse achievements.html style for multi-image slides
+        function buildImageBlock(images, title) {
+          if (!images.length) return "";
+
+          // Multiple images → same structure as achievements.html
+          const slides = images
+            .map((im, i) => {
+              const alt = escapeHTML(im.alt || `${title || "item"} — image ${i + 1}`);
+              const src = escapeHTML(im.src);
+              return `
+                <div class="swiper-slide">
+                  <img src="${src}" alt="${alt}" class="resume-img" loading="lazy" />
+                </div>
+              `;
+            })
+            .join("");
+
+          return `
+            <div class="spacer-30"></div>
+            <div class="swiper work-carousel clip-animation" data-delay="1">
+              <div class="swiper-wrapper">
+                ${slides}
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          `;
+        }
+
+        function initResumeCarousels(root) {
+          if (typeof window.workSlider === "function") {
+            try {
+              window.workSlider();
+            } catch (_) {}
+            return;
+          }
+          if (!window.Swiper) return;
+          root.querySelectorAll(".work-carousel").forEach((el) => {
+            if (el.__inited) return;
+            el.__inited = true;
+            new Swiper(el, {
+              loop: false,
+              slidesPerView: 1,
+              spaceBetween: 16,
+              pagination: { el: el.querySelector(".swiper-pagination"), clickable: true },
+              watchOverflow: true,
+              a11y: true,
+            });
+          });
+        }
+
+        function renderSection(wrapper, title, items) {
+          if (!Array.isArray(items) || items.length === 0) return;
+
+          const spacer = document.createElement("div");
+          spacer.className = "spacer-90";
+          wrapper.appendChild(spacer);
+
+          const caption = document.createElement("div");
+          caption.className = "timeline-caption-outer";
+          caption.innerHTML = `<div class="timeline-caption"><span>${escapeHTML(
+            title
+          )}</span></div>`;
+          wrapper.appendChild(caption);
+
+          const timeline = document.createElement("div");
+          timeline.className = "timeline row";
+
+          items.forEach((item, index) => {
+            const offset = index % 2 === 1 ? "offset-xl-6 offset-lg-6 offset-md-6" : "";
+            const col = document.createElement("div");
+            col.className = `col-xl-6 col-lg-6 col-md-6 col-sm-12 timeline-item clip-animation from-top ${offset}`;
+            col.setAttribute("data-duration", "1.5");
+
+            const date = item.date || "";
+            const ttl = item.title || "";
+            const descHTML = item.desc || "";
+            const imgs = validImages(item.images);
+            const gallery = buildImageBlock(imgs, ttl);
+
+            col.innerHTML = `
+              <div class="timeline-outer">
+                <span class="mini-text">${escapeHTML(date)}</span>
+                <h5>${escapeHTML(ttl)}</h5>
+                <p class="little-p">${descHTML}</p>
+                ${gallery}
+              </div>
+            `;
+
+            timeline.appendChild(col);
+          });
+
+          wrapper.appendChild(timeline);
+        }
+
+        function hydrateInteractions(root) {
+          if (typeof window.imagesLoaded === "function") {
+            imagesLoaded(root, () => {
+              initResumeCarousels(root);
+              if (typeof window.scrollAnimations === "function") {
+                try {
+                  window.scrollAnimations();
+                } catch (_) {}
+              }
+            });
+          } else {
+            initResumeCarousels(root);
+            if (typeof window.scrollAnimations === "function") {
+              try {
+                window.scrollAnimations();
+              } catch (_) {}
+            }
+          }
+        }
+
+        fetch(JSON_URL)
           .then((res) => res.json())
           .then((data) => {
             const sections = [
-              { id: "work", title: "Works Experiences", items: data.work_experiences },
-              { id: "education", title: "Education", items: data.education },
-              { id: "extra", title: "Extra-Curricular Activities & Experience", items: data.extra },
+              { title: "Works Experiences", items: data.work_experiences },
+              { title: "Education", items: data.education },
+              { title: "Extra-Curricular Activities & Experience", items: data.extra },
             ];
+            sections.forEach((s) => renderSection(wrapper, s.title, s.items));
 
-            for (const section of sections) {
-              // Section title and spacing
-              const spacer = document.createElement("div");
-              spacer.className = "spacer-90";
-              wrapper.appendChild(spacer);
-
-              const caption = document.createElement("div");
-              caption.className = "timeline-caption-outer";
-              caption.innerHTML = `<div class="timeline-caption"><span>${section.title}</span></div>`;
-              wrapper.appendChild(caption);
-
-              const timeline = document.createElement("div");
-              timeline.className = "timeline row";
-
-              section.items.forEach((item, index) => {
-                const offset = index % 2 === 1 ? "offset-xl-6 offset-lg-6 offset-md-6" : "";
-                const col = document.createElement("div");
-                col.className = `col-xl-6 col-lg-6 col-md-6 col-sm-12 timeline-item clip-animation from-top ${offset}`;
-                col.setAttribute("data-duration", "1.5");
-
-                col.innerHTML = `
-              <div class="timeline-outer">
-                <span class="mini-text">${item.date}</span>
-                <h5>${item.title}</h5>
-                <p class="little-p">${item.desc}</p>
-              </div>
-            `;
-                timeline.appendChild(col);
-              });
-
-              wrapper.appendChild(timeline);
-            }
-
-            // Mark as loaded
             wrapper.dataset.loaded = "true";
-
-            // Optional: animate scroll-based effects
-            if (typeof scrollAnimations === "function") scrollAnimations();
+            hydrateInteractions(wrapper);
           })
           .catch((err) => {
             console.error("❌ Failed to load resume data:", err);
-            const error = document.createElement("p");
-            error.textContent = "Failed to load resume information. Please try again later.";
-            error.style.color = "red";
-            wrapper.appendChild(error);
+            const p = document.createElement("p");
+            p.textContent = "Failed to load resume information. Please try again later.";
+            p.style.color = "red";
+            wrapper.appendChild(p);
           });
       });
     </script>

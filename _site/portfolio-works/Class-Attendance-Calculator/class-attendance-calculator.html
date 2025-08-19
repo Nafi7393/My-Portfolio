@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Class Attendance Calculator</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Class Attendance Calculator – Flask-based app for tracking class attendance with interactive charts." />
+    <meta name="keywords" content="class, attendance, calculator, flask, PostgreSQL, Chart.js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+
+    <!-- Google Web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../../assets/icon-fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="../../assets/icon-fonts/font-awesome/css/all.min.css" />
+  </head>
+  <body class="scroll-animation-on">
+    <!-- Preloader  -->
+    <div id="loader" class="preloader">
+      <div class="loading">
+        <div class="profile-image">
+          <img src="../../assets/images/profile-loader.jpg" alt="" />
+          <svg
+            style="position: absolute"
+            width="100px"
+            height="100px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <circle
+              class="js-circle circle"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+            <circle
+              class="js-circle circletwo"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="2"
+              fill="none" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="page-cover">
+      <div id="page-scroll">
+        <div class="barba-wrapper" data-barba="wrapper">
+          <main data-barba="container">
+            <div class="container">
+              <div class="page-wrapper">
+                <!-- Header -->
+                <header id="fixed">
+                  <div class="hamburger hamburger--elastic">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/resume">Resume</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
+                      <li><a href="/achievements">Achievements</a></li>
+                      <li><a href="/blog">Blog</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                    </ul>
+                  </nav>
+                </header>
+
+                <div class="spacer-30"></div>
+                <h1 class="big-title">Class Attendance Calculator</h1>
+                <p>
+                  Welcome to the Class Attendance Calculator, a Flask-based web application designed
+                  to simplify attendance management for classes. This project provides a
+                  user-friendly interface for both students and instructors to track attendance
+                  efficiently.
+                </p>
+
+                <!-- Access the Website -->
+                <div class="spacer-30"></div>
+                <h2>Explore the Project</h2>
+                <p>
+                  You can access Class Attendance Calculator here:
+                  <a
+                    href="https://class-attendance-calculator.onrender.com"
+                    target="_blank"
+                    style="color: #e6ff00; text-decoration: underline">
+                    Live Demo
+                  </a>
+                  &nbsp;|&nbsp;
+                  <a
+                    href="https://github.com/Nafi7393/Class-Attendance-Calculator"
+                    target="_blank"
+                    style="color: #e6ff00; text-decoration: underline">
+                    Source on GitHub
+                  </a>
+                </p>
+
+                <!-- Features -->
+                <div class="spacer-30"></div>
+                <h2>Features</h2>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>- User-Friendly Registration and Login:</strong>
+                      Seamless signup and secure login to your ClassTrack account.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Interactive Dashboard:</strong> View total classes attended, classes
+                      missed, and average attendance percentage at a glance.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Visualize Dashboard:</strong> Interactive charts powered by Chart.js
+                      to track attendance trends over time.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Course Management:</strong> Easily add, edit, or remove courses from
+                      your dashboard.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Real-time Updates:</strong> Attendance records update instantly as
+                      you make changes.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Responsive Design:</strong> Fully optimized for desktop, tablet, and
+                      mobile devices.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>- Privacy and Security:</strong> State-of-the-art encryption and best
+                      practices to protect your data.
+                    </p>
+                  </li>
+                </ul>
+
+                <!-- Technologies Used -->
+                <div class="spacer-30"></div>
+                <h2>Technologies Used</h2>
+                <ul>
+                  <li>
+                    <p><strong>- Front-end:</strong> HTML, CSS, JavaScript</p>
+                  </li>
+                  <li>
+                    <p><strong>- Back-end:</strong> Python (Flask)</p>
+                  </li>
+                  <li>
+                    <p><strong>- Database:</strong> PostgreSQL</p>
+                  </li>
+                  <li>
+                    <p><strong>- Charts:</strong> Chart.js</p>
+                  </li>
+                  <li>
+                    <p><strong>- Session Management:</strong> Flask-Session</p>
+                  </li>
+                </ul>
+
+                <!-- Screenshots -->
+                <div class="spacer-30"></div>
+                <h2>Screenshots</h2>
+                <div class="spacer-10"></div>
+
+                <!-- Home Page -->
+                <h5>Home Page</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a href="imgs/home.jpg" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/home.jpg" alt="Home Page" />
+                      </a>
+                      <p class="caption">
+                        <em>Home Page:</em> Landing screen with overview and quick links.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+
+                <!-- Registration Page -->
+                <h5>Registration Page</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a href="imgs/register.jpg" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/register.jpg" alt="Registration Page" />
+                      </a>
+                      <p class="caption">
+                        <em>Registration Page:</em> New users can sign up with name, email, and
+                        password; includes input validation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+
+                <!-- Login Page -->
+                <h5>Login Page</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a href="imgs/login.jpg" class="image lightbox" style="margin-bottom: 5px">
+                        <img src="imgs/login.jpg" alt="Login Page" />
+                      </a>
+                      <p class="caption">
+                        <em>Login Page:</em> Secure login form for returning users.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+
+                <!-- Dashboard (Desktop View) -->
+                <h5>Dashboard (Desktop View)</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a
+                        href="imgs/pc-dashboard.jpg"
+                        class="image lightbox"
+                        style="margin-bottom: 5px">
+                        <img src="imgs/pc-dashboard.jpg" alt="Dashboard Desktop" />
+                      </a>
+                      <p class="caption">
+                        <em>Dashboard:</em> Summary table and charts showing attendance statistics.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+
+                <!-- Attendance Statistics Chart -->
+                <h5>Attendance Statistics Chart</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a
+                        href="imgs/chart-dashboard.jpg"
+                        class="image lightbox"
+                        style="margin-bottom: 5px">
+                        <img src="imgs/chart-dashboard.jpg" alt="Attendance Chart" />
+                      </a>
+                      <p class="caption">
+                        <em>Attendance Chart:</em> Interactive trend visualization powered by
+                        Chart.js.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+
+                <!-- Footer -->
+                <h5>Footer</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a
+                        href="imgs/footer-dashboard.jpg"
+                        class="image lightbox"
+                        style="margin-bottom: 5px">
+                        <img src="imgs/footer-dashboard.jpg" alt="Footer" />
+                      </a>
+                      <p class="caption">
+                        <em>Footer:</em> Contains copyright, links, and quick navigation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="spacer-30"></div>
+
+                <!-- Mobile View -->
+                <h5>Mobile View (After Login)</h5>
+                <div class="lightbox-gallery">
+                  <div class="row box-animation">
+                    <div class="col-xl-12 clip-animation">
+                      <a
+                        href="imgs/mobile-dashboard.jpeg"
+                        class="image lightbox"
+                        style="margin-bottom: 5px">
+                        <img src="imgs/mobile-dashboard.jpeg" alt="Mobile Dashboard" />
+                      </a>
+                      <p class="caption">
+                        <em>Mobile Dashboard:</em> Optimized for smaller screens with responsive
+                        layout.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Setup Instructions, Usage, Contributing, Acknowledgments -->
+                <div class="spacer-30"></div>
+                <div class="readme-wrapper">
+                  <div class="spacer-30"></div>
+                  <h2>Installation</h2>
+                  <p style="color: #fff; line-height: 1.3em; margin-bottom: 20px">
+                    <br />
+                    git clone https://github.com/Nafi7393/Class-Attendance-Calculator.git<br />
+                    cd Class-Attendance-Calculator<br />
+                    pip install -r requirements.txt<br />
+                  </p>
+                  <p style="color: #fff; line-height: 1.3em; margin-bottom: 20px">
+                    <strong>Optional:</strong> Set your Flask environment:<br />
+                    <code style="color: #fff">export FLASK_APP=main.py</code><br />
+                    <code style="color: #fff">export FLASK_ENV=development</code>
+                  </p>
+                  <p style="color: #fff; line-height: 1.3em">Start the server with:</p>
+                  <p style="color: #fff; line-height: 1.3em">
+                    <code>flask run</code>
+                  </p>
+                  <p style="color: #fff; line-height: 1.3em">
+                    Then open <code>http://localhost:5000</code> in your browser.
+                  </p>
+
+                  <div class="spacer-30"></div>
+                  <h2>Usage</h2>
+                  <ol style="color: #fff; line-height: 1.3em">
+                    <li>- Register or log in to your Class Attendance Calculator account.</li>
+                    <li>- Add your courses and mark attendance as needed.</li>
+                    <li>- Monitor your statistics and charts on the dashboard.</li>
+                    <li>- Update records anytime and see real-time changes.</li>
+                    <li>- Log out when finished to secure your session.</li>
+                  </ol>
+                </div>
+
+                <!-- Footer Navigation -->
+                <div class="work-navigation spacer-60">
+                  <a class="case" href="/portfolio">
+                    <svg
+                      height="16"
+                      viewBox="0 0 40 40"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect height="14" width="14" x="1" y="25" />
+                      <rect height="14" width="14" x="25" y="25" />
+                      <rect height="14" width="14" x="1" y="1" />
+                      <rect height="14" width="14" x="25" y="1" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+              <div class="container">
+                <div class="footer-inner">
+                  <div class="footer-content">
+                    <p>© <span id="year"></span> Naich Naznafi. All rights reserved.</p>
+                  </div>
+                  <ul class="social">
+                    <li>
+                      <a href="https://www.linkedin.com/in/naich-naznafi" target="_blank"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="mailto:contact.nafi779@gmail.com" target="_blank"
+                        ><i class="fas fa-envelope"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="bg-image" style="background-image: url(../../assets/images/bg-dark.jpg)"></div>
+
+    <!-- Javascripts -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3gqyHylICdokv-P1q2WtRihCFhiFnm_U&sensor=false"></script>
+    <script src="../../assets/js/map.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
