@@ -42,7 +42,13 @@
     {
       "date": "Feb 2025 - Present",
       "title": "Cultural Secretary - Mechanical Engineering Association, KUET",
-      "desc": "Responsible for promoting campus events by creating digital and print materials such as posters, banners, and event visuals. Fostered student engagement through creative competitions, informal gatherings, and community-building initiatives within the department."
+      "desc": "Responsible for promoting campus events by creating digital and print materials such as posters, banners, and event visuals. Fostered student engagement through creative competitions, informal gatherings, and community-building initiatives within the department.",
+      "images": [
+        {
+          "src": "../accomplishments/others/me-association/cs.jpg",
+          "alt": "Cultural Secretary of the Mechanical Engineering Association, KUET for the Executive Committee 2025"
+        }
+      ]
     },
     {
       "date": "Feb 2024 - Present",
