@@ -75,9 +75,15 @@
       "desc": "Engaged in interdisciplinary workshops and hands-on projects focused on mechanical and aerospace systems. Developed core technical skills through team-based problem-solving, design challenges, and practical engineering tasks."
     },
     {
-      "date": "Jul 2024 - Feb 2025",
-      "title": "Trainee Member of Autonomous sub-team - Team Durbar",
-      "desc": "Worked on developing and testing autonomous robotic systems with a focus on Python and sensor integration. Contributed to software logic, algorithm refinement, and initial simulations for navigation and obstacle detection using tools like NumPy and custom Python scripts."
+      "date": "Jul 2024 - Present",
+      "title": "Senior Executive Member of Autonomous Sub-team - Team Durbar",
+      "desc": "Leading the development and testing of autonomous robotic systems, with emphasis on advanced Python programming, sensor integration, and system optimization. Oversaw software architecture, algorithm refinement, and real-world testing for navigation, mapping, and obstacle detection. Mentored trainee members and coordinated cross-functional collaboration to improve simulation-to-hardware performance.",
+      "images": [
+        {
+          "src": "../accomplishments/others/team-durbar/post.jpg",
+          "alt": "Senior Executive Member of Autonomous Sub-team - Team Durbar, Executive Committee 2025"
+        }
+      ]
     },
     {
       "date": "Jan 2025 - Aug 2025",
