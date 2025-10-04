@@ -71,8 +71,14 @@
     },
     {
       "date": "Apr 2024 - Present",
-      "title": "Team Kilo Flight",
-      "desc": "Engaged in interdisciplinary workshops and hands-on projects focused on mechanical and aerospace systems. Developed core technical skills through team-based problem-solving, design challenges, and practical engineering tasks."
+      "title": "Senior Executive of IT & Media at Team Kilo Flight",
+      "desc": "Leading the team to manage all IT and media operations, including the creation of graphics and digital content. Responsible for mentoring junior members and actively pursuing sponsorship opportunities to support team initiatives.",
+      "images": [
+        {
+          "src": "../accomplishments/others/team-kilo/post.jpg",
+          "alt": "Senior Executive of IT & Media - Team Kilo Flight, Executive Committee 2025"
+        }
+      ]
     },
     {
       "date": "Jul 2024 - Present",
