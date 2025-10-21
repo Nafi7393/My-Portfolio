@@ -1,0 +1,5 @@
+title: Gemini Certified Educator
+verify: https://edu.google.accredible.com/6a3984df-01e3-4996-a657-0fca37086667?key=78085f5520399950061286b12008ffa3eca78a39a6cc43827b7daba2c1920e6f
+date: Oct 2025
+issued by: Google 
+tags: Prompt Engineering, Artificial Intelligence (AI), Google, Gemini Certified

@@ -1,5 +1,26 @@
 [
   {
+    "date": "Oct 2025",
+    "title": "Gemini Certified Educator",
+    "images": [
+      {
+        "src": "../accomplishments/my-certificates/gemini-certified-educator/main-certificate.jpg",
+        "alt": "Certificate: Gemini Certified Educator"
+      }
+    ],
+    "issuer": "Google",
+    "tags": [
+      "Prompt Engineering",
+      "Artificial Intelligence (AI)",
+      "Google",
+      "Gemini Certified"
+    ],
+    "verifyLink": "https://edu.google.accredible.com/6a3984df-01e3-4996-a657-0fca37086667?key=78085f5520399950061286b12008ffa3eca78a39a6cc43827b7daba2c1920e6f",
+    "offset": false,
+    "duration": "0.5",
+    "delay": "0.0"
+  },
+  {
     "date": "Apr 2025",
     "title": "Qubit\u2019s Introduction to Quantum Computing",
     "images": [
@@ -17,7 +38,7 @@
       "Quantum Key Distribution"
     ],
     "verifyLink": "",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.0"
   },
@@ -51,7 +72,7 @@
       "Artificial Neural Networks"
     ],
     "verifyLink": "https://www.coursera.org/verify/specialization/UOX0RUFWQ4JY",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.0"
   },
@@ -72,9 +93,9 @@
       "Conversational AI"
     ],
     "verifyLink": "",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
-    "delay": "0.0"
+    "delay": "0.1"
   },
   {
     "date": "Jun 2024",
@@ -110,7 +131,7 @@
       "JavaScript"
     ],
     "verifyLink": "https://coursera.org/verify/specialization/97QK9SYP3YRN",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -132,7 +153,7 @@
       "Scikit-Learn"
     ],
     "verifyLink": "https://coursera.org/verify/SYT555ZLZUF9",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -154,7 +175,7 @@
       "Pseudocode"
     ],
     "verifyLink": "https://coursera.org/verify/KKH35AU6UAKY",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -176,7 +197,7 @@
       "Pandas"
     ],
     "verifyLink": "https://coursera.org/verify/UZHBU947FFA2",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.1"
   },
@@ -198,9 +219,9 @@
       "Engineering Workshop"
     ],
     "verifyLink": "",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
-    "delay": "0.1"
+    "delay": "0.2"
   },
   {
     "date": "Jan 2024",
@@ -219,7 +240,7 @@
       "Business Communication"
     ],
     "verifyLink": "https://coursera.org/verify/HCLVWHFWRLN4",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.2"
   },
@@ -240,7 +261,7 @@
       "Object-Oriented Programming (OOP)"
     ],
     "verifyLink": "https://www.coursera.org/verify/VCF85JBKM3HR",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.2"
   },
@@ -262,7 +283,7 @@
       "Google Cloud"
     ],
     "verifyLink": "https://www.cloudskillsboost.google/public_profiles/965f5e8f-c070-4c58-a568-906165c8e2ea/badges/4960457",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
     "delay": "0.2"
   },
@@ -283,7 +304,7 @@
       "AI"
     ],
     "verifyLink": "https://www.coursera.org/verify/8LEMRKW687DA",
-    "offset": true,
+    "offset": false,
     "duration": "0.5",
     "delay": "0.2"
   },
@@ -305,8 +326,8 @@
       "Engineering Design"
     ],
     "verifyLink": "",
-    "offset": false,
+    "offset": true,
     "duration": "0.5",
-    "delay": "0.2"
+    "delay": "0.3"
   }
 ]
