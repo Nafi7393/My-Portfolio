@@ -40,17 +40,6 @@
   ],
   "extra": [
     {
-      "date": "Feb 2025 - Present",
-      "title": "Cultural Secretary - Mechanical Engineering Association, KUET",
-      "desc": "Responsible for promoting campus events by creating digital and print materials such as posters, banners, and event visuals. Fostered student engagement through creative competitions, informal gatherings, and community-building initiatives within the department.",
-      "images": [
-        {
-          "src": "../accomplishments/others/me-association/cs.jpg",
-          "alt": "Cultural Secretary of the Mechanical Engineering Association, KUET for the Executive Committee 2025"
-        }
-      ]
-    },
-    {
       "date": "Feb 2024 - Present",
       "title": "Senior Executive Vice President (SEVP) - KUET Business and Entrepreneurship Club (KBEC)",
       "desc": "From being a Junior Executive, to Assistant General Secretary, and now serving as the Senior Executive Vice President of KBEC; this journey has been nothing short of unforgettable. Every step came with lessons, challenges, responsibilities, and countless memories that shaped me into a better leader and person. KBEC has always been more than just a club to me; it has been a place of growth, ambition, teamwork, and self-discovery.",
@@ -70,6 +59,17 @@
         {
           "src": "../accomplishments/others/kbec/junior-executive.jpg",
           "alt": "Junior Executive at KBEC"
+        }
+      ]
+    },
+    {
+      "date": "Feb 2025 - Present",
+      "title": "Cultural Secretary - Mechanical Engineering Association, KUET",
+      "desc": "Responsible for promoting campus events by creating digital and print materials such as posters, banners, and event visuals. Fostered student engagement through creative competitions, informal gatherings, and community-building initiatives within the department.",
+      "images": [
+        {
+          "src": "../accomplishments/others/me-association/cs.jpg",
+          "alt": "Cultural Secretary of the Mechanical Engineering Association, KUET for the Executive Committee 2025"
         }
       ]
     },
